@@ -1,6 +1,6 @@
 package objectmother
 
-import edu.ou.ece.dip.hir.shape.{Line3D, ProjectedTriangle, ProjectedLine, Point2D}
+import edu.ou.ece.dip.hlr.shape.{Line3D, ProjectedTriangle, ProjectedLine, Point2D}
 
 object ProjectedTriangleMother {
   def create(A: Point2D, B: Point2D, C: Point2D): ProjectedTriangle = {

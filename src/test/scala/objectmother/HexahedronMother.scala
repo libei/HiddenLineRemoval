@@ -1,6 +1,6 @@
 package objectmother
 
-import edu.ou.ece.dip.hir.shape.{Point3D, Hexahedron}
+import edu.ou.ece.dip.hlr.shape.{Point3D, Hexahedron}
 
 object HexahedronMother {
   val length = 10

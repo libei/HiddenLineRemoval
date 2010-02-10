@@ -1,6 +1,6 @@
 package objectmother
 
-import edu.ou.ece.dip.hir.shape.{Point3D, Line3D}
+import edu.ou.ece.dip.hlr.shape.{Point3D, Line3D}
 
 object Line3DMother {
     val lineAStart = new Point3D(0, 1, 12)

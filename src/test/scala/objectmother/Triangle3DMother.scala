@@ -1,6 +1,6 @@
 package objectmother
 
-import edu.ou.ece.dip.hir.shape.{Point3D, Triangle3D}
+import edu.ou.ece.dip.hlr.shape.{Point3D, Triangle3D}
 
 object Triangle3DMother {
   val pointA: Point3D = new Point3D(0, 0, 10)
