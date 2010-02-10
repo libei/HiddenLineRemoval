@@ -2,9 +2,9 @@ package edu.ou.ece.dip.hir.shape
 
 import org.specs.runner.ScalaTest
 import edu.ou.ece.dip.hir.SpecificationBase
-import edu.ou.ece.dip.hir.utils.{CameraProjectionUtils, MatlabUtils}
+import edu.ou.ece.dip.hir.utils.{CameraProjectionUtils}
 
-class ProjectedLineSpec extends SpecificationBase with ScalaTest {
+class ProjectedLineSpec extends SpecificationBase {
 
   "One line parallel to X axis and one line parallel Y axis" in {
     val lineA = new ProjectedLine(new Point2D(1, 0), new Point2D(1, 2), null, 0.5)

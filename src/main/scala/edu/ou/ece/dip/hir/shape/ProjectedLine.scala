@@ -6,9 +6,9 @@ class ProjectedLine(start: Point2D, end: Point2D, originalLine: Line3D, val foca
   }
 
   def getOriginalPoint(point: Point2D): Option[Point3D] = {
-    val point1OnCamera = new Point3D(point.x, point.y, focalLength)
-    val lineFromZeroToPoint1OnCamera = new Line3D(new Point3D(0, 0, 0), point1OnCamera)
-    lineFromZeroToPoint1OnCamera.intersectExtension(originalLine)
+    val point1OnCamera = Point3D(point.x, point.y, focalLength)
+    val lineFromZeroToPoint1OnCamera = Point3D(0, 0, 0) to point1OnCamera
+    lineFromZeroToPoint1OnCamera intersectExtension originalLine
   }
 
   override def toString = "start: " + start.toString + " end:" + end.toString

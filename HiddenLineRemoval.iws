@@ -3,8 +3,9 @@
   <component name="ChangeListManager" verified="true">
     <list default="true" id="242eafd1-f5f8-433c-95ec-27698fb83ad7" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/scala/edu/ou/ece/dip/hir/shape/ProjectedLine.scala" afterPath="$PROJECT_DIR$/src/main/scala/edu/ou/ece/dip/hir/shape/ProjectedLine.scala" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/scala/edu/ou/ece/dip/hir/shape/HexahedronSpec.scala" afterPath="$PROJECT_DIR$/src/test/scala/edu/ou/ece/dip/hir/shape/HexahedronSpec.scala" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/HiddenLineRemoval.iws" afterPath="$PROJECT_DIR$/HiddenLineRemoval.iws" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/scala/edu/ou/ece/dip/hir/shape/Line3D.scala" afterPath="$PROJECT_DIR$/src/main/scala/edu/ou/ece/dip/hir/shape/Line3D.scala" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/scala/edu/ou/ece/dip/hir/shape/ProjectedLineSpec.scala" afterPath="$PROJECT_DIR$/src/test/scala/edu/ou/ece/dip/hir/shape/ProjectedLineSpec.scala" />
     </list>
     <ignored path="HiddenLineRemoval.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -105,6 +106,15 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="ProjectedLineSpec.scala" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/scala/edu/ou/ece/dip/hir/shape/ProjectedLineSpec.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="4" column="54" selection-start="166" selection-end="166" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="Line2D.scala" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/scala/edu/ou/ece/dip/hir/shape/Line2D.scala">
           <provider selected="true" editor-type-id="text-editor">
@@ -126,25 +136,34 @@
       <file leaf-file-name="ProjectedLine.scala" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/scala/edu/ou/ece/dip/hir/shape/ProjectedLine.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="0" selection-start="223" selection-end="223" vertical-scroll-proportion="0.0">
+            <state line="12" column="41" selection-start="556" selection-end="556" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Line3D.scala" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="Line2DSpec.scala" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/scala/edu/ou/ece/dip/hir/shape/Line2DSpec.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="4" column="6" selection-start="85" selection-end="85" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="HexahedronSpec.scala" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/scala/edu/ou/ece/dip/hir/shape/HexahedronSpec.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="6" column="46" selection-start="196" selection-end="196" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Line3D.scala" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/scala/edu/ou/ece/dip/hir/shape/Line3D.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="20" selection-start="620" selection-end="620" vertical-scroll-proportion="0.5283019">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="HiddenLineRemovalUtilsSpec.scala" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/scala/edu/ou/ece/dip/hir/utils/HiddenLineRemovalUtilsSpec.scala">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="202" column="19" selection-start="7415" selection-end="7415" vertical-scroll-proportion="0.0">
+            <state line="19" column="16" selection-start="849" selection-end="849" vertical-scroll-proportion="-12.92">
               <folding />
             </state>
           </provider>
@@ -159,10 +178,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Point2DSpec.scala" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/scala/edu/ou/ece/dip/hir/shape/Point2DSpec.scala">
+      <file leaf-file-name="Trapezoid3DSpec.scala" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/scala/edu/ou/ece/dip/hir/shape/Trapezoid3DSpec.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="28" selection-start="386" selection-end="386" vertical-scroll-proportion="0.0">
+            <state line="8" column="25" selection-start="306" selection-end="306" vertical-scroll-proportion="0.39650145">
               <folding />
             </state>
           </provider>
@@ -186,8 +205,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/main/scala/edu/ou/ece/dip/hir/utils/FloatUtil.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/edu/ou/ece/dip/hir/shape/ProjectedTriangle.scala" />
         <option value="$PROJECT_DIR$/src/test/scala/edu/ou/ece/dip/hir/shape/VectorSpec.scala" />
         <option value="$PROJECT_DIR$/src/test/scala/edu/ou/ece/dip/hir/shape/Line2DSpec.scala" />
         <option value="$PROJECT_DIR$/src/test/scala/edu/ou/ece/dip/hir/utils/CameraProjectionUtilsSpec.scala" />
@@ -200,8 +217,10 @@
         <option value="$PROJECT_DIR$/src/test/scala/edu/ou/ece/dip/hir/utils/HiddenLineRemovalUtilsSpec.scala" />
         <option value="$PROJECT_DIR$/src/test/scala/edu/ou/ece/dip/hir/shape/Line3DSpec.scala" />
         <option value="$PROJECT_DIR$/src/test/scala/edu/ou/ece/dip/hir/shape/ProjectedTriangleSpec.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/edu/ou/ece/dip/hir/shape/ProjectedLine.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/edu/ou/ece/dip/hir/shape/Line3D.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/edu/ou/ece/dip/hir/shape/ProjectedLine.scala" />
+        <option value="$PROJECT_DIR$/src/test/scala/edu/ou/ece/dip/hir/shape/HexahedronSpec.scala" />
+        <option value="$PROJECT_DIR$/src/test/scala/edu/ou/ece/dip/hir/shape/ProjectedLineSpec.scala" />
       </list>
     </option>
   </component>
@@ -383,138 +402,6 @@
               <option name="myItemId" value="main" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="scala" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="hir" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="view" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="HiddenLineRemoval" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="HiddenLineRemoval" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="scala" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="hir" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="utils" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="HiddenLineRemoval" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="HiddenLineRemoval" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="scala" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="hir" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="shape" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="HiddenLineRemoval" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="HiddenLineRemoval" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="scala" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="hir" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="controller" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="HiddenLineRemoval" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="HiddenLineRemoval" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="scala" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="hir" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="console" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
@@ -563,10 +450,10 @@
       <recent name="edu.ou.ece.dip.hir.shape" />
     </key>
   </component>
-  <component name="RunManager" selected="Specs.ProjectedTriangleSpec">
-    <configuration default="false" name="Triangle3DSpec" type="SpecsRunConfiguration" factoryName="Specs" temporary="true">
+  <component name="RunManager" selected="Specs.VectorSpec">
+    <configuration default="false" name="Line2DSpec" type="SpecsRunConfiguration" factoryName="Specs" temporary="true">
       <module name="HiddenLineRemoval" />
-      <setting name="path" value="edu.ou.ece.dip.hir.shape.Triangle3DSpec" />
+      <setting name="path" value="edu.ou.ece.dip.hir.shape.Line2DSpec" />
       <setting name="vmparams" value="" />
       <setting name="params" value="" />
       <RunnerSettings RunnerId="Run" />
@@ -582,27 +469,27 @@
       <ConfigurationWrapper RunnerId="Run" />
       <method />
     </configuration>
+    <configuration default="false" name="ProjectedLineSpec" type="SpecsRunConfiguration" factoryName="Specs" temporary="true">
+      <module name="HiddenLineRemoval" />
+      <setting name="path" value="edu.ou.ece.dip.hir.shape.ProjectedLineSpec" />
+      <setting name="vmparams" value="" />
+      <setting name="params" value="" />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="Trapezoid3DSpec" type="SpecsRunConfiguration" factoryName="Specs" temporary="true">
+      <module name="HiddenLineRemoval" />
+      <setting name="path" value="edu.ou.ece.dip.hir.shape.Trapezoid3DSpec" />
+      <setting name="vmparams" value="" />
+      <setting name="params" value="" />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
     <configuration default="false" name="VectorSpec" type="SpecsRunConfiguration" factoryName="Specs" temporary="true">
       <module name="HiddenLineRemoval" />
       <setting name="path" value="edu.ou.ece.dip.hir.shape.VectorSpec" />
-      <setting name="vmparams" value="" />
-      <setting name="params" value="" />
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Run" />
-      <method />
-    </configuration>
-    <configuration default="false" name="Line3DSpec" type="SpecsRunConfiguration" factoryName="Specs" temporary="true">
-      <module name="HiddenLineRemoval" />
-      <setting name="path" value="edu.ou.ece.dip.hir.shape.Line3DSpec" />
-      <setting name="vmparams" value="" />
-      <setting name="params" value="" />
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Run" />
-      <method />
-    </configuration>
-    <configuration default="false" name="ProjectedTriangleSpec" type="SpecsRunConfiguration" factoryName="Specs" temporary="true">
-      <module name="HiddenLineRemoval" />
-      <setting name="path" value="edu.ou.ece.dip.hir.shape.ProjectedTriangleSpec" />
       <setting name="vmparams" value="" />
       <setting name="params" value="" />
       <RunnerSettings RunnerId="Run" />
@@ -791,11 +678,11 @@
       </method>
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Specs.Triangle3DSpec" />
+      <item index="0" class="java.lang.String" itemvalue="Specs.Line2DSpec" />
       <item index="1" class="java.lang.String" itemvalue="Specs.Point2DSpec" />
-      <item index="2" class="java.lang.String" itemvalue="Specs.VectorSpec" />
-      <item index="3" class="java.lang.String" itemvalue="Specs.Line3DSpec" />
-      <item index="4" class="java.lang.String" itemvalue="Specs.ProjectedTriangleSpec" />
+      <item index="2" class="java.lang.String" itemvalue="Specs.ProjectedLineSpec" />
+      <item index="3" class="java.lang.String" itemvalue="Specs.Trapezoid3DSpec" />
+      <item index="4" class="java.lang.String" itemvalue="Specs.VectorSpec" />
     </list>
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
       <Host>localhost</Host>
@@ -902,28 +789,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/scala/edu/ou/ece/dip/hir/shape/Triangle3D.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="35" column="6" selection-start="926" selection-end="926" vertical-scroll-proportion="0.33333334">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/scala/edu/ou/ece/dip/hir/shape/VectorSpec.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="21" selection-start="458" selection-end="458" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/edu/ou/ece/dip/hir/view/ProjectionView.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="25" selection-start="442" selection-end="442" vertical-scroll-proportion="-3.1948051" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/edu/ou/ece/dip/hir/controller/ProjectionController.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="6" selection-start="146" selection-end="146" vertical-scroll-proportion="0.24853802" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/scala/edu/ou/ece/dip/hir/utils/FloatUtilSpec.scala">
       <provider selected="true" editor-type-id="text-editor">
         <state line="4" column="7" selection-start="86" selection-end="86" vertical-scroll-proportion="0.24817519" />
@@ -939,23 +804,9 @@
         <state line="59" column="24" selection-start="2221" selection-end="2221" vertical-scroll-proportion="0.8178694" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/scala/edu/ou/ece/dip/hir/shape/Line3DSpec.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="23" selection-start="638" selection-end="638" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/scala/edu/ou/ece/dip/hir/utils/HiddenLineRemovalUtilsSpec.scala">
       <provider selected="true" editor-type-id="text-editor">
         <state line="202" column="19" selection-start="7415" selection-end="7415" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/scala/edu/ou/ece/dip/hir/shape/ProjectedTriangleSpec.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="133" column="12" selection-start="5635" selection-end="5635" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -981,6 +832,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/edu/ou/ece/dip/hir/shape/Line3D.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="16" selection-start="849" selection-end="849" vertical-scroll-proportion="-12.92">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/edu/ou/ece/dip/hir/shape/Point3D.scala">
       <provider selected="true" editor-type-id="text-editor">
         <state line="14" column="6" selection-start="298" selection-end="298" vertical-scroll-proportion="0.0">
@@ -990,14 +848,49 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/edu/ou/ece/dip/hir/shape/ProjectedLine.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="0" selection-start="223" selection-end="223" vertical-scroll-proportion="0.0">
+        <state line="12" column="41" selection-start="556" selection-end="556" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/edu/ou/ece/dip/hir/shape/Line3D.scala">
+    <entry file="file://$PROJECT_DIR$/src/test/scala/edu/ou/ece/dip/hir/shape/Line2DSpec.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="20" selection-start="620" selection-end="620" vertical-scroll-proportion="0.5283019">
+        <state line="4" column="6" selection-start="85" selection-end="85" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/scala/edu/ou/ece/dip/hir/shape/HexahedronSpec.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="46" selection-start="196" selection-end="196" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/scala/edu/ou/ece/dip/hir/shape/Line3DSpec.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="23" selection-start="638" selection-end="638" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/scala/edu/ou/ece/dip/hir/shape/ProjectedLineSpec.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="54" selection-start="166" selection-end="166" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/scala/edu/ou/ece/dip/hir/shape/ProjectedTriangleSpec.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="133" column="12" selection-start="5635" selection-end="5635" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/scala/edu/ou/ece/dip/hir/shape/Trapezoid3DSpec.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="25" selection-start="306" selection-end="306" vertical-scroll-proportion="0.39650145">
           <folding />
         </state>
       </provider>
