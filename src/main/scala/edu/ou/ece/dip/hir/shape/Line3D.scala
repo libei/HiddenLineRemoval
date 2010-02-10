@@ -4,13 +4,13 @@ class Line3D(val start: Point3D, val end: Point3D) {
   
   private def tryIntersect(thisStartX: Double, thisStartY: Double, thisEndX: Double, thisEndY: Double, thatStartX: Double, thatStartY: Double, thatEndX: Double, thatEndY: Double): Option[Point3D] = {
 
-    val lineThisStartXY = new Point2D(thisStartX, thisStartY)
-    val lineThisEndXY = new Point2D(thisEndX, thisEndY)
-    val lineThisXY = new Line2D(lineThisStartXY, lineThisEndXY)
+    val lineThisStartXY = Point2D(thisStartX, thisStartY)
+    val lineThisEndXY = Point2D(thisEndX, thisEndY)
+    val lineThisXY = lineThisStartXY to lineThisEndXY
 
-    val lineThatStartXY = new Point2D(thatStartX, thatStartY)
-    val lineThatEndXY = new Point2D(thatEndX, thatEndY)
-    val lineThatXY = new Line2D(lineThatStartXY, lineThatEndXY)
+    val lineThatStartXY = Point2D(thatStartX, thatStartY)
+    val lineThatEndXY = Point2D(thatEndX, thatEndY)
+    val lineThatXY = lineThatStartXY to lineThatEndXY
 
     val intersection = lineThisXY.intersectExtension(lineThatXY)
     if (intersection != None) {

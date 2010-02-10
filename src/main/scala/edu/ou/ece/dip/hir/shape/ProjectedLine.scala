@@ -2,10 +2,6 @@ package edu.ou.ece.dip.hir.shape
 
 class ProjectedLine(start: Point2D, end: Point2D, originalLine: Line3D, val focalLength: Double) extends Line2D(start, end) {
   def subLine(start: Point2D, end: Point2D): ProjectedLine = {
-
-    val newOriginalStart = getOriginalPoint(start)
-    val newOriginalEnd = getOriginalPoint(end)
-    //todo
     new ProjectedLine(start, end, originalLine, focalLength)
   }
 
