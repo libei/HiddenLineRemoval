@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager" verified="true">
     <list default="true" id="242eafd1-f5f8-433c-95ec-27698fb83ad7" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/scala/edu/ou/ece/dip/hir/shape/VectorSpec.scala" afterPath="$PROJECT_DIR$/src/test/scala/edu/ou/ece/dip/hir/shape/VectorSpec.scala" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/HiddenLineRemoval.iws" afterPath="$PROJECT_DIR$/HiddenLineRemoval.iws" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/scala/edu/ou/ece/dip/hir/shape/Point2DSpec.scala" afterPath="$PROJECT_DIR$/src/test/scala/edu/ou/ece/dip/hir/shape/Point2DSpec.scala" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/scala/edu/ou/ece/dip/hir/shape/Line2DSpec.scala" afterPath="$PROJECT_DIR$/src/test/scala/edu/ou/ece/dip/hir/shape/Line2DSpec.scala" />
     </list>
     <ignored path="HiddenLineRemoval.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -114,19 +113,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Line2DSpec.scala" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="Line2DSpec.scala" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/scala/edu/ou/ece/dip/hir/shape/Line2DSpec.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="6" selection-start="85" selection-end="85" vertical-scroll-proportion="0.0">
+            <state line="9" column="19" selection-start="301" selection-end="301" vertical-scroll-proportion="0.4473684">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="VectorSpec.scala" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="VectorSpec.scala" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/scala/edu/ou/ece/dip/hir/shape/VectorSpec.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="23" column="6" selection-start="785" selection-end="785" vertical-scroll-proportion="0.84502923">
+            <state line="14" column="22" selection-start="491" selection-end="491" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -177,7 +176,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/test/scala/edu/ou/ece/dip/hir/shape/Line2DSpec.scala" />
         <option value="$PROJECT_DIR$/src/test/scala/edu/ou/ece/dip/hir/shape/ProjectedLineSpec.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/edu/ou/ece/dip/hir/utils/CameraProjectionUtils.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/edu/ou/ece/dip/hir/shape/Vector.scala" />
@@ -193,6 +191,7 @@
         <option value="$PROJECT_DIR$/src/test/scala/edu/ou/ece/dip/hir/shape/Triangle3DSpec.scala" />
         <option value="$PROJECT_DIR$/src/test/scala/edu/ou/ece/dip/hir/shape/Point2DSpec.scala" />
         <option value="$PROJECT_DIR$/src/test/scala/edu/ou/ece/dip/hir/shape/VectorSpec.scala" />
+        <option value="$PROJECT_DIR$/src/test/scala/edu/ou/ece/dip/hir/shape/Line2DSpec.scala" />
       </list>
     </option>
   </component>
@@ -520,16 +519,7 @@
       <recent name="edu.ou.ece.dip.hir.shape" />
     </key>
   </component>
-  <component name="RunManager" selected="Specs.Point2DSpec">
-    <configuration default="false" name="SpecificationBase" type="SpecsRunConfiguration" factoryName="Specs" temporary="true">
-      <module name="HiddenLineRemoval" />
-      <setting name="path" value="edu.ou.ece.dip.hir.SpecificationBase" />
-      <setting name="vmparams" value="" />
-      <setting name="params" value="" />
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Run" />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="Specs.VectorSpec">
     <configuration default="false" name="Line2DSpec" type="SpecsRunConfiguration" factoryName="Specs" temporary="true">
       <module name="HiddenLineRemoval" />
       <setting name="path" value="edu.ou.ece.dip.hir.shape.Line2DSpec" />
@@ -572,6 +562,15 @@
     <configuration default="false" name="Point2DSpec" type="SpecsRunConfiguration" factoryName="Specs" temporary="true">
       <module name="HiddenLineRemoval" />
       <setting name="path" value="edu.ou.ece.dip.hir.shape.Point2DSpec" />
+      <setting name="vmparams" value="" />
+      <setting name="params" value="" />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="VectorSpec" type="SpecsRunConfiguration" factoryName="Specs" temporary="true">
+      <module name="HiddenLineRemoval" />
+      <setting name="path" value="edu.ou.ece.dip.hir.shape.VectorSpec" />
       <setting name="vmparams" value="" />
       <setting name="params" value="" />
       <RunnerSettings RunnerId="Run" />
@@ -760,11 +759,11 @@
       </method>
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Specs.SpecificationBase" />
-      <item index="1" class="java.lang.String" itemvalue="Specs.Line2DSpec" />
-      <item index="2" class="java.lang.String" itemvalue="Specs.FloatUtilSpec" />
-      <item index="3" class="java.lang.String" itemvalue="Specs.Triangle3DSpec" />
-      <item index="4" class="java.lang.String" itemvalue="Specs.Point2DSpec" />
+      <item index="0" class="java.lang.String" itemvalue="Specs.Line2DSpec" />
+      <item index="1" class="java.lang.String" itemvalue="Specs.FloatUtilSpec" />
+      <item index="2" class="java.lang.String" itemvalue="Specs.Triangle3DSpec" />
+      <item index="3" class="java.lang.String" itemvalue="Specs.Point2DSpec" />
+      <item index="4" class="java.lang.String" itemvalue="Specs.VectorSpec" />
     </list>
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
       <Host>localhost</Host>
@@ -947,16 +946,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/scala/edu/ou/ece/dip/hir/shape/Line2DSpec.scala">
+    <entry file="file://$PROJECT_DIR$/src/test/scala/edu/ou/ece/dip/hir/shape/VectorSpec.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="6" selection-start="85" selection-end="85" vertical-scroll-proportion="0.0">
+        <state line="14" column="22" selection-start="491" selection-end="491" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/scala/edu/ou/ece/dip/hir/shape/VectorSpec.scala">
+    <entry file="file://$PROJECT_DIR$/src/test/scala/edu/ou/ece/dip/hir/shape/Line2DSpec.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="6" selection-start="785" selection-end="785" vertical-scroll-proportion="0.84502923">
+        <state line="9" column="19" selection-start="301" selection-end="301" vertical-scroll-proportion="0.4473684">
           <folding />
         </state>
       </provider>
