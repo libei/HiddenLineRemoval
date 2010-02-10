@@ -47,7 +47,7 @@ class Triangle3D(val cornerA: Point3D, val cornerB: Point3D, val cornerC: Point3
     positiveZCrossProduct.dotProduct(vectorALine)
   }
 
-  def isCloser(point: Point3D): Boolean = {
+  def isCloserThan(point: Point3D): Boolean = {
     FloatUtil.GreaterThan(depth(point), 0)
   }
 

@@ -3,7 +3,9 @@
   <component name="ChangeListManager" verified="true">
     <list default="true" id="242eafd1-f5f8-433c-95ec-27698fb83ad7" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/HiddenLineRemoval.iws" afterPath="$PROJECT_DIR$/HiddenLineRemoval.iws" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/scala/edu/ou/ece/dip/hir/shape/ProjectedTriangleSpec.scala" afterPath="$PROJECT_DIR$/src/test/scala/edu/ou/ece/dip/hir/shape/ProjectedTriangleSpec.scala" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/scala/edu/ou/ece/dip/hir/shape/Triangle3DSpec.scala" afterPath="$PROJECT_DIR$/src/test/scala/edu/ou/ece/dip/hir/shape/Triangle3DSpec.scala" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/scala/edu/ou/ece/dip/hir/shape/ProjectedTriangle.scala" afterPath="$PROJECT_DIR$/src/main/scala/edu/ou/ece/dip/hir/shape/ProjectedTriangle.scala" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/scala/edu/ou/ece/dip/hir/shape/Triangle3D.scala" afterPath="$PROJECT_DIR$/src/main/scala/edu/ou/ece/dip/hir/shape/Triangle3D.scala" />
     </list>
     <ignored path="HiddenLineRemoval.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -84,8 +86,8 @@
       <property name="field_breakpoints_groupByClasses" value="true" />
       <property name="method_breakpoints_groupByClasses" value="true" />
       <property name="exception_breakpoints_viewId" value="TABLE" />
-      <property name="field_breakpoints_viewId" value="TABLE" />
       <property name="exception_breakpoints_groupByClasses" value="true" />
+      <property name="field_breakpoints_viewId" value="TABLE" />
       <property name="method_breakpoints_groupByMethods" value="false" />
     </ui_properties>
   </component>
@@ -104,10 +106,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Triangle3DSpec.scala" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="Triangle3DSpec.scala" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/scala/edu/ou/ece/dip/hir/shape/Triangle3DSpec.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="38" column="0" selection-start="802" selection-end="1334" vertical-scroll-proportion="0.8579387">
+            <state line="27" column="25" selection-start="964" selection-end="964" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Triangle3D.scala" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/scala/edu/ou/ece/dip/hir/shape/Triangle3D.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="10" column="6" selection-start="202" selection-end="202" vertical-scroll-proportion="0.3030303">
               <folding />
             </state>
           </provider>
@@ -185,6 +196,11 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Favorites" />
+      <pane id="PackagesPane">
+        <subPane />
+      </pane>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -429,27 +445,22 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Favorites" />
-      <pane id="Scope" />
-      <pane id="PackagesPane">
-        <subPane />
-      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth0" value="251" />
-    <property name="project.structure.proportion" value="0.15" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth1" value="172" />
+    <property name="project.structure.proportion" value="0.15" />
     <property name="options.splitter.main.proportions" value="0.3" />
-    <property name="MemberChooser.sorted" value="false" />
-    <property name="recentsLimit" value="5" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder1" value="1" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth0" value="74" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder1" value="1" />
+    <property name="recentsLimit" value="5" />
+    <property name="MemberChooser.sorted" value="false" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder0" value="0" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth2" value="139" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth3" value="731" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth3" value="385" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth3" value="731" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth2" value="69" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth1" value="73" />
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
@@ -466,8 +477,8 @@
     <property name="options.lastSelected" value="com.intellij.openapi.vcs.configurable.VcsManagerConfigurable$4" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="MemberChooser.copyJavadoc" value="false" />
-    <property name="dynamic.classpath" value="false" />
     <property name="options.searchVisible" value="true" />
+    <property name="dynamic.classpath" value="false" />
   </component>
   <component name="RecentsManager">
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
@@ -774,20 +785,20 @@
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.48013246" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.6721854" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.37086093" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31622517" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.43543047" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3923841" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.21763754" sideWeight="0.6976744" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32958034" sideWeight="0.6655629" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.21763754" sideWeight="0.6976744" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3228477" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32958034" sideWeight="0.6655629" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.37086093" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3228477" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31622517" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.6721854" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.43543047" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.10440123" sideWeight="0.5844371" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Thumbnails" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32906976" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -829,114 +840,86 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/test/scala/edu/ou/ece/dip/hir/shape/Line3DSpec.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="25" selection-start="659" selection-end="659" vertical-scroll-proportion="0.65831435">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/scala/edu/ou/ece/dip/hir/utils/HiddenLineRemovalUtilsSpec.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="247" column="52" selection-start="9888" selection-end="9888" vertical-scroll-proportion="0.6042654">
-          <folding />
-        </state>
+        <state line="247" column="52" selection-start="9888" selection-end="9888" vertical-scroll-proportion="0.6042654" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/edu/ou/ece/dip/hir/utils/FloatUtil.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="30" selection-start="281" selection-end="281" vertical-scroll-proportion="0.34851936">
-          <folding />
-        </state>
+        <state line="9" column="30" selection-start="281" selection-end="281" vertical-scroll-proportion="0.34851936" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/scala/edu/ou/ece/dip/hir/SpecificationBase.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/scala-lang/scala-library/2.7.7/scala-library-2.7.7.jar!/scala/List.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="36" selection-start="610" selection-end="610" vertical-scroll-proportion="0.7192308">
-          <folding />
-        </state>
+        <state line="11" column="36" selection-start="610" selection-end="610" vertical-scroll-proportion="0.7192308" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/scala/edu/ou/ece/dip/hir/shape/Trapezoid3DSpec.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="6" selection-start="85" selection-end="85" vertical-scroll-proportion="-0.53429604">
-          <folding />
-        </state>
+        <state line="4" column="6" selection-start="85" selection-end="85" vertical-scroll-proportion="-0.53429604" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/edu/ou/ece/dip/hir/shape/ProjectedTriangle.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="149" column="20" selection-start="5812" selection-end="5812" vertical-scroll-proportion="0.044386424">
-          <folding />
-        </state>
+        <state line="149" column="20" selection-start="5812" selection-end="5812" vertical-scroll-proportion="0.044386424" />
       </provider>
     </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/scala-tools/testing/specs/1.6.1/specs-1.6.1.jar!/org/specs/Specification.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="6" selection-start="535" selection-end="535" vertical-scroll-proportion="0.31070495">
-          <folding />
-        </state>
+        <state line="7" column="6" selection-start="535" selection-end="535" vertical-scroll-proportion="0.31070495" />
       </provider>
     </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/scala-tools/testing/specs/1.6.1/specs-1.6.1.jar!/org/specs/specification/LifeCycle.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="13" selection-start="1196" selection-end="1196" vertical-scroll-proportion="0.7025">
-          <folding />
-        </state>
+        <state line="18" column="13" selection-start="1196" selection-end="1196" vertical-scroll-proportion="0.7025" />
       </provider>
     </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/scala-tools/testing/specs/1.6.1/specs-1.6.1.jar!/org/specs/specification/Examples.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="0" selection-start="1159" selection-end="1159" vertical-scroll-proportion="0.68">
-          <folding />
-        </state>
+        <state line="16" column="0" selection-start="1159" selection-end="1159" vertical-scroll-proportion="0.68" />
       </provider>
     </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/scala-tools/testing/specs/1.6.1/specs-1.6.1.jar!/org/specs/specification/ExampleExecution.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="0" selection-start="671" selection-end="671" vertical-scroll-proportion="0.4675">
-          <folding />
-        </state>
+        <state line="11" column="0" selection-start="671" selection-end="671" vertical-scroll-proportion="0.4675" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/scala/edu/ou/ece/dip/hir/shape/Line2DSpec.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="3" selection-start="263" selection-end="263" vertical-scroll-proportion="0.34">
-          <folding />
-        </state>
+        <state line="8" column="3" selection-start="263" selection-end="263" vertical-scroll-proportion="0.34" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/edu/ou/ece/dip/hir/shape/Line2D.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="12" selection-start="197" selection-end="197" vertical-scroll-proportion="-1.4340044">
-          <folding />
-        </state>
+        <state line="9" column="12" selection-start="197" selection-end="197" vertical-scroll-proportion="-1.4340044" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/edu/ou/ece/dip/hir/view/ProjectionView.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="18" selection-start="366" selection-end="366" vertical-scroll-proportion="-1.0357941">
-          <folding />
-        </state>
+        <state line="12" column="18" selection-start="366" selection-end="366" vertical-scroll-proportion="-1.0357941" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/scala/edu/ou/ece/dip/hir/shape/ProjectedTriangleSpec.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="14" selection-start="999" selection-end="999" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="26" column="14" selection-start="999" selection-end="999" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/scala/edu/ou/ece/dip/hir/shape/Triangle3DSpec.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="38" column="0" selection-start="802" selection-end="1334" vertical-scroll-proportion="0.8579387">
+        <state line="27" column="25" selection-start="964" selection-end="964" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/edu/ou/ece/dip/hir/shape/Triangle3D.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="6" selection-start="202" selection-end="202" vertical-scroll-proportion="0.3030303">
           <folding />
         </state>
       </provider>

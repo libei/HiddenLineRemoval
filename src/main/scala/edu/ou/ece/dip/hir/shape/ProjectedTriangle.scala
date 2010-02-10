@@ -71,11 +71,11 @@ class ProjectedTriangle(vertexAB: ProjectedLine, vertexBC: ProjectedLine, vertex
   }
 
   private def oneEndIsOneThePlateAnotherIsCovered(start: Point2D, end: Point2D, startOriginal: Point3D, endOriginal: Point3D): Boolean = {
-    val isStartPointCovered = originalTriangle.isCloser(startOriginal) && isInside(start)
+    val isStartPointCovered = originalTriangle.isCloserThan(startOriginal) && isInside(start)
     val isStartPointOnThePlate = originalTriangle.isEqual(startOriginal) && isInside(start)
     val isStartPointUnCovered = originalTriangle.isBehind(startOriginal) || !isInside(start)
 
-    val isEndPointCovered = originalTriangle.isCloser(endOriginal) && isInside(end)
+    val isEndPointCovered = originalTriangle.isCloserThan(endOriginal) && isInside(end)
     val isEndPointOnThePlate = originalTriangle.isEqual(endOriginal) && isInside(end)
     val isEndPointUnCovered = originalTriangle.isBehind(endOriginal) || !isInside(end)
 
@@ -83,8 +83,8 @@ class ProjectedTriangle(vertexAB: ProjectedLine, vertexBC: ProjectedLine, vertex
   }
 
   private def bothCovered(start: Point3D, end: Point3D): Boolean = {
-    val startCovered = originalTriangle.isCloser(start)
-    val endCovered = originalTriangle.isCloser(end)
+    val startCovered = originalTriangle.isCloserThan(start)
+    val endCovered = originalTriangle.isCloserThan(end)
 
     startCovered && endCovered
   }
@@ -93,8 +93,8 @@ class ProjectedTriangle(vertexAB: ProjectedLine, vertexBC: ProjectedLine, vertex
     val original = List(projectedLine)
     //
     //    if (isInside(projectedLine)
-    //            && originalTriangle.isCloser(projectedLine.originalLine.start)
-    //            && originalTriangle.isCloser(projectedLine.originalLine.end))
+    //            && originalTriangle.isCloserThan(projectedLine.originalLine.start)
+    //            && originalTriangle.isCloserThan(projectedLine.originalLine.end))
     //      return List()
 
     var intersections = intersect(projectedLine)
@@ -122,7 +122,7 @@ class ProjectedTriangle(vertexAB: ProjectedLine, vertexBC: ProjectedLine, vertex
       else
         (projectedLine.start, projectedLine.getOriginalPoint(projectedLine.end))
 
-      if (originalTriangle.isCloser(originalEndpointInsideTriangle.get))
+      if (originalTriangle.isCloserThan(originalEndpointInsideTriangle.get))
         return List(projectedLine.subLine(endpointOutsideTriangle, i))
       else
         return original
