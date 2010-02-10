@@ -10,6 +10,10 @@ object Point2D {
 
 class Point2D (val x: Double, val y: Double) {
 
+  def to(that: Point2D): Line2D = {
+    new Line2D(this, that)
+  }
+
   def distanceTo(that: Point2D): Double = {
     Math.sqrt((this.x - that.x)*(this.x - that.x) + (this.y - that.y)*(this.y - that.y)).toFloat 
   }

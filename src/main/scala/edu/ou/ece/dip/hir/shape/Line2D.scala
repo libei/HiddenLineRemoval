@@ -63,8 +63,6 @@ class Line2D(val start: Point2D, val end: Point2D) {
 
     if (!FloatUtil.Equals((start.y - end.y), 0))
       return (start.y - point.y) / (start.y - end.y)
-
-//    throw new Exception("Start point and end point is the same!" + "start: x-" + start.x + " y-" + start.y + " end:x-" + end.x + " y-" + end.y)
     0
   }
 
@@ -107,4 +105,16 @@ class Line2D(val start: Point2D, val end: Point2D) {
 
   def length = Math.sqrt((end.x - start.x) * (end.x - start.x) + (end.y - start.y) * (end.y - start.y)).asInstanceOf[Double]
 
+  override def equals(obj: Any): Boolean = {
+    if (obj == null)
+      false
+    if (!obj.isInstanceOf[Line2D])
+      false
+    val that = obj.asInstanceOf[Line2D]
+    ((this.start == that.start) && (this.end == that.end))
+  }
+
+  override def hashCode: Int = {
+    start.hashCode + end.hashCode
+  }
 }
