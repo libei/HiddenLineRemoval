@@ -21,7 +21,6 @@ class VectorSpec extends Specification {
     }
 
     "do corss product" >> {
-      
       "Given" >> {
         val vectorA = new Vector(1, 2, 3)
         val vectorB = new Vector(4, 5, 6)
