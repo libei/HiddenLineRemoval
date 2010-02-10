@@ -6,7 +6,7 @@
 
     <groupId>HiddenLineRemoval</groupId>
     <artifactId>HiddenLineRemoval</artifactId>
-    <version>1.0</version>
+    <version>0.1</version>
     <repositories>
         <repository>
             <id>scala-tools.org</id>
@@ -14,13 +14,6 @@
             <url>http://scala-tools.org/repo-releases</url>
         </repository>
     </repositories>
-    <!--<pluginRepositories>-->
-    <!--<pluginRepository>-->
-    <!--<id>scala-tools.org</id>-->
-    <!--<name>Scala-tools Maven2 Repository</name>-->
-    <!--<url>http://scala-tools.org/repo-releases</url>-->
-    <!--</pluginRepository>-->
-    <!--</pluginRepositories>-->
     <dependencies>
         <dependency>
             <groupId>org.scala-lang</groupId>
@@ -33,22 +26,22 @@
             <version>1.6.1</version>
             <scope>test</scope>
         </dependency>
-        <dependency>
-            <groupId>junit</groupId>
-            <artifactId>junit</artifactId>
-            <version>4.0</version>
-            <scope>test</scope>
-        </dependency>
-        <dependency>
-            <groupId>org.scalatest</groupId>
-            <artifactId>scalatest</artifactId>
-            <version>1.0</version>
-            <scope>test</scope>
-        </dependency>
+        <!--<dependency>-->
+            <!--<groupId>junit</groupId>-->
+            <!--<artifactId>junit</artifactId>-->
+            <!--<version>4.0</version>-->
+            <!--<scope>test</scope>-->
+        <!--</dependency>-->
+        <!--<dependency>-->
+            <!--<groupId>org.scalatest</groupId>-->
+            <!--<artifactId>scalatest</artifactId>-->
+            <!--<version>1.0</version>-->
+            <!--<scope>test</scope>-->
+        <!--</dependency>-->
     </dependencies>
     <build>
-        <sourceDirectory>src/main/scala</sourceDirectory>
-        <testSourceDirectory>src/test/scala</testSourceDirectory>
+        <!--<sourceDirectory>src/main/scala</sourceDirectory>-->
+        <!--<testSourceDirectory>src/test/scala</testSourceDirectory>-->
         <plugins>
             <plugin>
                 <groupId>org.scala-tools</groupId>
@@ -71,6 +64,4 @@
             </plugin>
         </plugins>
     </build>
-
-
 </project>

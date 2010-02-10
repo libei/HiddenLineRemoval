@@ -29,8 +29,6 @@
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" exported="" name="Maven: org.scala-lang:scala-library:2.7.7" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: org.scala-tools.testing:specs:1.6.1" level="project" />
-    <orderEntry type="library" scope="TEST" name="Maven: junit:junit:4.0" level="project" />
-    <orderEntry type="library" scope="TEST" name="Maven: org.scalatest:scalatest:1.0" level="project" />
   </component>
 </module>
 
