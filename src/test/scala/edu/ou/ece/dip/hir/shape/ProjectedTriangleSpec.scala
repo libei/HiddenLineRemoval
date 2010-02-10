@@ -13,8 +13,8 @@ class ProjectedTriangleSpec extends SpecificationBase {
     "tell if a line has any intersection with it" >> {
 
       "Given a line goes through the triangle in the middle, there should be two intersections" >> {
-        val projectedLine = ProjectedLineMother.create(new Point2D(0, 3), new Point2D(5, 3))
-        val intersections = triangle.intersect(projectedLine)
+        val line = ProjectedLineMother.create(new Point2D(0, 3), new Point2D(5, 3))
+        val intersections = triangle.intersect(line)
 
         intersections.size must_== 2
         intersections.toList(0).x must_== 1.5
