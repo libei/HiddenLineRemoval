@@ -59,25 +59,9 @@ class Line3D(val start: Point3D, val end: Point3D) {
       false
     val that = obj.asInstanceOf[Line3D]
     ((this.start == that.start) && (this.end == that.end))
-    //|| ((this.start == that.end) && (this.end == that.start))  
   }
 
   override def hashCode: Int = {
     start.hashCode + end.hashCode
-  }
-
-  def getCoefficient(point: Point3D): Double = {
-    if ((start.x - end.x) != 0)
-      return (start.x - point.x) / (start.x - end.x)
-
-    if ((start.y - end.y) != 0)
-      return (start.y - point.y) / (start.y - end.y)
-
-    if ((start.z - end.z) != 0)
-      return (start.z - point.z) / (start.x - end.z)
-
-    throw new Exception("Start point and end point is the same!")
-
-
   }
 }

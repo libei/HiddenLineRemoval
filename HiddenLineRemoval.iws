@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager" verified="true">
     <list default="true" id="242eafd1-f5f8-433c-95ec-27698fb83ad7" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/scala/edu/ou/ece/dip/hir/shape/Line3DSpec.scala" afterPath="$PROJECT_DIR$/src/test/scala/edu/ou/ece/dip/hir/shape/Line3DSpec.scala" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/HiddenLineRemoval.iws" afterPath="$PROJECT_DIR$/HiddenLineRemoval.iws" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/scala/edu/ou/ece/dip/hir/shape/Line2DSpec.scala" afterPath="$PROJECT_DIR$/src/test/scala/edu/ou/ece/dip/hir/shape/Line2DSpec.scala" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/scala/edu/ou/ece/dip/hir/shape/Line3D.scala" afterPath="$PROJECT_DIR$/src/main/scala/edu/ou/ece/dip/hir/shape/Line3D.scala" />
     </list>
     <ignored path="HiddenLineRemoval.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -113,10 +114,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Line2DSpec.scala" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="Line2DSpec.scala" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/scala/edu/ou/ece/dip/hir/shape/Line2DSpec.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="19" selection-start="301" selection-end="301" vertical-scroll-proportion="0.4473684">
+            <state line="10" column="23" selection-start="322" selection-end="322" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -131,10 +132,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Line3DSpec.scala" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="Line3DSpec.scala" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/scala/edu/ou/ece/dip/hir/shape/Line3DSpec.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="6" selection-start="85" selection-end="85" vertical-scroll-proportion="0.0">
+            <state line="6" column="52" selection-start="214" selection-end="214" vertical-scroll-proportion="0.23448277">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Line3D.scala" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/scala/edu/ou/ece/dip/hir/shape/Line3D.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="29" column="0" selection-start="1193" selection-end="1193" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -176,7 +186,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/test/scala/edu/ou/ece/dip/hir/shape/ProjectedLineSpec.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/edu/ou/ece/dip/hir/utils/CameraProjectionUtils.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/edu/ou/ece/dip/hir/shape/Vector.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/edu/ou/ece/dip/hir/view/ProjectionView.scala" />
@@ -186,12 +195,13 @@
         <option value="$PROJECT_DIR$/src/main/scala/edu/ou/ece/dip/hir/shape/ProjectedTriangle.scala" />
         <option value="$PROJECT_DIR$/src/test/scala/edu/ou/ece/dip/hir/utils/HiddenLineRemovalUtilsSpec.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/edu/ou/ece/dip/hir/shape/Line2D.scala" />
-        <option value="$PROJECT_DIR$/src/test/scala/edu/ou/ece/dip/hir/shape/Line3DSpec.scala" />
         <option value="$PROJECT_DIR$/src/test/scala/edu/ou/ece/dip/hir/shape/ProjectedTriangleSpec.scala" />
         <option value="$PROJECT_DIR$/src/test/scala/edu/ou/ece/dip/hir/shape/Triangle3DSpec.scala" />
         <option value="$PROJECT_DIR$/src/test/scala/edu/ou/ece/dip/hir/shape/Point2DSpec.scala" />
         <option value="$PROJECT_DIR$/src/test/scala/edu/ou/ece/dip/hir/shape/VectorSpec.scala" />
         <option value="$PROJECT_DIR$/src/test/scala/edu/ou/ece/dip/hir/shape/Line2DSpec.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/edu/ou/ece/dip/hir/shape/Line3D.scala" />
+        <option value="$PROJECT_DIR$/src/test/scala/edu/ou/ece/dip/hir/shape/Line3DSpec.scala" />
       </list>
     </option>
   </component>
@@ -813,6 +823,7 @@
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.48013246" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19701986" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.37086093" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31622517" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -821,12 +832,11 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.21763754" sideWeight="0.6976744" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32958034" sideWeight="0.6655629" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32958034" sideWeight="0.7913907" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3228477" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3228477" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.6721854" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.10440123" sideWeight="0.5844371" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Thumbnails" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32906976" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -868,11 +878,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$MAVEN_REPOSITORY$/org/scala-lang/scala-library/2.7.7/scala-library-2.7.7.jar!/scala/List.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="36" selection-start="610" selection-end="610" vertical-scroll-proportion="0.7192308" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/scala/edu/ou/ece/dip/hir/shape/Trapezoid3DSpec.scala">
       <provider selected="true" editor-type-id="text-editor">
         <state line="4" column="6" selection-start="85" selection-end="85" vertical-scroll-proportion="-0.53429604" />
@@ -939,13 +944,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/scala/edu/ou/ece/dip/hir/shape/Line3DSpec.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="6" selection-start="85" selection-end="85" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/scala/edu/ou/ece/dip/hir/shape/VectorSpec.scala">
       <provider selected="true" editor-type-id="text-editor">
         <state line="14" column="22" selection-start="491" selection-end="491" vertical-scroll-proportion="0.0">
@@ -955,7 +953,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/scala/edu/ou/ece/dip/hir/shape/Line2DSpec.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="19" selection-start="301" selection-end="301" vertical-scroll-proportion="0.4473684">
+        <state line="10" column="23" selection-start="322" selection-end="322" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/edu/ou/ece/dip/hir/shape/Line3D.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="29" column="0" selection-start="1193" selection-end="1193" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/scala/edu/ou/ece/dip/hir/shape/Line3DSpec.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="52" selection-start="214" selection-end="214" vertical-scroll-proportion="0.23448277">
           <folding />
         </state>
       </provider>
