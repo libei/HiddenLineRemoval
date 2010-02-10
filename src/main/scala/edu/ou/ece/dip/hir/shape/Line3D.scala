@@ -7,6 +7,7 @@ object Line3D {
 }
 
 class Line3D(val start: Point3D, val end: Point3D) {
+  
   private def tryIntersect(thisStartX: Double, thisStartY: Double, thisEndX: Double, thisEndY: Double, thatStartX: Double, thatStartY: Double, thatEndX: Double, thatEndY: Double): Option[Point3D] = {
 
     val lineThisStartXY = new Point2D(thisStartX, thisStartY)

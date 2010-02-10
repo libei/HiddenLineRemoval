@@ -18,7 +18,9 @@ class Point3D(val x: Double, val y: Double, val z: Double, val name: String) {
     this(x, y, z, "")
   }
 
-  
+  def to (that: Point3D): Line3D = {
+    new Line3D(this, that)
+  }
 
   override def equals(obj: Any): Boolean = {
     if (obj == null)

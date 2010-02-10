@@ -7,11 +7,11 @@ class Point2DSpec extends SpecificationBase {
   "Should get the distance to another point" >> {
 
     "Given a point at the same position" >> {
-      A.distanceTo(A) must_== 0
+      A distanceTo A must_== 0
     }
 
     "Given a point not at the same position" >> {
-      A.distanceTo(Point2D(0, 2)) must_== 2
+      A distanceTo Point2D(0, 2) must_== 2
     }
   }
 
