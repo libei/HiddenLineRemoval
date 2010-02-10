@@ -152,39 +152,39 @@ class ProjectedTriangleSpec extends SpecificationBase {
 
     "tell if a point is inside it" >> {
       "Given a point duplicated with one corner of the triangle" >> {
-        triangle.isInside(Point2D(0, 0)) must_== true
+        triangle.isInside(Point2D(0, 0)) mustBe true
       }
 
       "Given a point on the extension of a vertex of a triangle" +
               "The point should not be inside" >> {
-        triangle.isInside(Point2D(10, 0)) must_== false
+        triangle.isInside(Point2D(10, 0)) mustBe false
       }
 
       "Given a point on one vertex the triangle" +
               "The point should be inside" >> {
-        triangle.isInside(Point2D(3, 0)) must_== true
+        triangle.isInside(Point2D(3, 0)) mustBe true
       }
 
       "Given a set of point purly inside the triangle" >> {
-        triangle.isInside(new Point2D(2, 1)) must_== true
-        triangle.isInside(new Point2D(2.5, 4)) must_== true
+        triangle.isInside(new Point2D(2, 1)) mustBe true
+        triangle.isInside(new Point2D(2.5, 4)) mustBe true
       }
 
       "Given a set of point purly outside the triangle" >> {
-        triangle.isInside(new Point2D(-1, -1)) must_== false
-        triangle.isInside(new Point2D(2, 10)) must_== false
+        triangle.isInside(new Point2D(-1, -1)) mustBe false
+        triangle.isInside(new Point2D(2, 10)) mustBe false
       }
     }
 
     "tell if a line is inside it" >> {
       "Given a line outside" +
               "Then the line should be outside" >> {
-        triangle.isInside(new Line2D(new Point2D(-1, -1), new Point2D(2, 1))) must_== false
+        triangle.isInside(new Line2D(new Point2D(-1, -1), new Point2D(2, 1))) mustBe false
       }
 
       "Given a line inside" +
               "Then the line should be outside" >> {
-        triangle.isInside(new Line2D(new Point2D(2.5, 4), new Point2D(2, 1))) must_== true
+        triangle.isInside(new Line2D(new Point2D(2.5, 4), new Point2D(2, 1))) mustBe true
       }
     }
   }
