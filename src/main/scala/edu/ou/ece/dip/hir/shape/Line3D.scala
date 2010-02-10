@@ -1,11 +1,5 @@
 package edu.ou.ece.dip.hir.shape
 
-object Line3D {
-  def apply(start: Point3D, end: Point3D): Line3D = {
-    new Line3D(start, end)
-  }
-}
-
 class Line3D(val start: Point3D, val end: Point3D) {
   
   private def tryIntersect(thisStartX: Double, thisStartY: Double, thisEndX: Double, thisEndY: Double, thatStartX: Double, thatStartY: Double, thatEndX: Double, thatEndY: Double): Option[Point3D] = {

@@ -140,7 +140,7 @@ class HiddenLineRemovalUtilsSpec extends SpecificationBase {
     val G = Point3D(18, 6 + -10, 20, "G")
     val H = Point3D(12, 6 + -10, 20, "H")
 
-    val AB = Line3D(A, B)
+    val AB = A to B
     val ABCD = new Trapezoid3D(A, B, C, D)
 
     val hex = new Hexahedron(A, B, C, D, E, F, G, H)
@@ -160,7 +160,7 @@ class HiddenLineRemovalUtilsSpec extends SpecificationBase {
     val G = Point3D(18 - 20, 6, 20, "G")
     val H = Point3D(12 - 20, 6, 20, "H")
 
-    val AB = Line3D(A, B)
+    val AB = A to B
     val ABCD = new Trapezoid3D(A, B, C, D)
 
     val hex = new Hexahedron(A, B, C, D, E, F, G, H)
@@ -180,7 +180,7 @@ class HiddenLineRemovalUtilsSpec extends SpecificationBase {
     val G = Point3D(18 - 20, 6 + 20, 20, "G")
     val H = Point3D(12 - 20, 6 + 20, 20, "H")
 
-    val AB = Line3D(A, B)
+    val AB = A to B
     val ABCD = new Trapezoid3D(A, B, C, D)
 
     val hex = new Hexahedron(A, B, C, D, E, F, G, H)
@@ -200,7 +200,7 @@ class HiddenLineRemovalUtilsSpec extends SpecificationBase {
     val G = Point3D(18.634300f - 20.0, 6.634300f + 20.0, 20.634300, "G")
     val H = Point3D(12.634300f - 20.0, 6.634300f + 20.0, 20.634300, "H")
 
-    val AB = Line3D(A, B)
+    val AB = A to B
     val ABCD = new Trapezoid3D(A, B, C, D)
 
     val hex = new Hexahedron(A, B, C, D, E, F, G, H)

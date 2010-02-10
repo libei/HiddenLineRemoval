@@ -17,6 +17,6 @@ class Point2DSpec extends SpecificationBase {
 
   "Should generate a line with another point" >> {
     val B = new Point2D(5, 5)
-    A to B must_== Line2D(A, B)
+    A to B must_== new Line2D(A, B)
   }
 }

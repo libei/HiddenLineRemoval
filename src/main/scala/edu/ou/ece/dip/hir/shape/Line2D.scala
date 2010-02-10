@@ -3,12 +3,6 @@ package edu.ou.ece.dip.hir.shape
 import scala.Math
 import edu.ou.ece.dip.hir.utils.FloatUtil
 
-object Line2D {
-  def apply(start: Point2D, end: Point2D): Line2D = {
-    new Line2D(start, end)
-  }
-}
-
 class Line2D(val start: Point2D, val end: Point2D) {
 
   def slop: Option[Double] = {

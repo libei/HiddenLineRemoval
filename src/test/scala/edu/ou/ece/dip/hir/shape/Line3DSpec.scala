@@ -18,6 +18,6 @@ class Line3DSpec extends SpecificationBase {
     val A = Point3D(-1, 1, 5)
     val B = Point3D(10, 1, 5)
 
-    A to B must_== Line3D(A, B)
+    A to B must_== new Line3D(A, B)
   }
 }
