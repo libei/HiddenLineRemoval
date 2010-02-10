@@ -7,9 +7,9 @@ class CameraUtilsSpec extends Specification {
  
   "Camera projection" should {
     "project point" in {
-      val expected = CameraUtils.project(Point3D(1, 3, 4), 2.0)
-        expected.x must_== 0.5
-        expected.y must_== 1.5
+      val actual = CameraUtils.project(Point3D(1, 3, 4), 2.0)
+        actual.x must_== 0.5
+        actual.y must_== 1.5
     }
 
     "project line" in {
@@ -17,12 +17,12 @@ class CameraUtilsSpec extends Specification {
       val A = Point3D(4, 4, 2)
       val B = Point3D(8, 8, 1)
 
-      val line = CameraUtils.project(A to B, 2.0)
+      val actual = CameraUtils.project(A to B, 2.0)
 
-      line.start.x must_== 4
-      line.start.y must_== 4
-      line.end.x must_== 16
-      line.end.y must_== 16
+      actual.start.x must_== 4
+      actual.start.y must_== 4
+      actual.end.x must_== 16
+      actual.end.y must_== 16
     }
 
     "project triangle" in {
