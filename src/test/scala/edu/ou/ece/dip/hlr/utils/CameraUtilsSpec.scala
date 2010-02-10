@@ -2,8 +2,9 @@ package edu.ou.ece.dip.hlr.utils
 
 import org.specs._
 import edu.ou.ece.dip.hlr.shape.{Point3D}
+import edu.ou.ece.dip.hlr.SpecificationBase
 
-class CameraUtilsSpec extends Specification {
+class CameraUtilsSpec extends SpecificationBase {
  
   "Camera projection" should {
     "project point" in {

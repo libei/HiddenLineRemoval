@@ -2,7 +2,7 @@ package edu.ou.ece.dip.hlr.utils
 
 import edu.ou.ece.dip.hlr.SpecificationBase
 
-object FloatUtilSpec extends SpecificationBase {
+class FloatUtilSpec extends SpecificationBase {
   "If difference is greater than EPSILON then not equal" in {
     FloatUtil.Equals(0.1, 0.105) must_== false
   }

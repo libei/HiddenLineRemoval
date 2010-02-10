@@ -1,8 +1,8 @@
 package edu.ou.ece.dip.hlr.shape
 
-import org.specs.Specification
+import edu.ou.ece.dip.hlr.SpecificationBase
 
-class VectorSpec extends Specification {
+class VectorSpec extends SpecificationBase {
   "A vector" should {
     "do dot product" >> {
 

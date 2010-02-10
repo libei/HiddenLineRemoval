@@ -1,10 +1,10 @@
 package edu.ou.ece.dip.hlr
 
-import org.specs.Specification
 import org.specs.matcher.xUnit
 import shape._
+import org.specs.{SpecificationWithJUnit}
 
-class SpecificationBase extends Specification with xUnit  {
+class SpecificationBase extends SpecificationWithJUnit  with xUnit  {
   def AreEqual(actual: Line3D, expected: Line3D) {
     AreEqual(actual.start, expected.start)
     AreEqual(actual.end, expected.end)

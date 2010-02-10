@@ -1,7 +1,6 @@
 package edu.ou.ece.dip.hlr.shape
 
 import edu.ou.ece.dip.hlr.SpecificationBase
-import org.specs.runner.ScalaTest
 import objectmother.HexahedronMother
 
 class HexahedronSpec extends SpecificationBase {
