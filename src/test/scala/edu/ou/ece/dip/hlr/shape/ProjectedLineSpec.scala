@@ -1,6 +1,5 @@
 package edu.ou.ece.dip.hlr.shape
 
-import org.specs.runner.ScalaTest
 import edu.ou.ece.dip.hlr.SpecificationBase
 import edu.ou.ece.dip.hlr.utils.{CameraUtils}
 
@@ -35,16 +34,6 @@ class ProjectedLineSpec extends SpecificationBase {
   }
 
   "Could get subline" in {
-
-    val originalLine: Line3D = new Line3D(new Point3D(1, 0, 5), new Point3D(1, 2, 5))
-    val projected = new ProjectedLine(new Point2D(1, 0), new Point2D(1, 2), originalLine, 0.5)
-    val newStart = new Point2D(1, 0.5)
-    val newEnd = new Point2D(1, 1.5)
-    val subLine = projected.subLine(newStart, newEnd)
-    subLine.A must_== newStart
-    subLine.B must_== newEnd
-    subLine.getOriginalPoint(subLine.A) must_== new Point3D(1, 0.5, 5)
-    subLine.getOriginalPoint(subLine.B) must_== new Point3D(1, 1.5, 5)
   }
 
   "Should map a point to original point" in {

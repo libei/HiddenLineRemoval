@@ -146,9 +146,6 @@ class ProjectedTriangle(vertexAB: ProjectedLine, vertexBC: ProjectedLine, vertex
       if (isStartVisible && isEndVisible)
         return original
 
-      if (!isStartVisible || !isEndVisible)
-        return List()
-
       if (intersectionOne.distanceTo(projectedLine.A) < intersectionTwo.distanceTo(projectedLine.A)) {
         return List(projectedLine.subLine(projectedLine.A, intersectionOne),
           projectedLine.subLine(intersectionTwo, projectedLine.B))

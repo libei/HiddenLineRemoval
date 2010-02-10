@@ -11,29 +11,17 @@ class HiddenLineRemovalUtilsSpec extends SpecificationBase {
 
     val afterRemovalLines = HiddenLineRemovalUtils.removeHiddenLines(regular.composingTriangles, regular.composingVertices, 0.5)
 
-    afterRemovalLines.length must_== 3
+    afterRemovalLines.length must_== 7
   }
-
-  "Should remove hidden lines for not regular Hexahedron" in {
-    val notRegular: Hexahedron = HexahedronMother.cutRegular
-
-    val afterRemovalLines = HiddenLineRemovalUtils.removeHiddenLines(notRegular.composingTriangles, notRegular.composingVertices, 0.5)
-
-    afterRemovalLines.length must_== 1
-    //    afterRemovalLines.length must_== 3
-  }
-
 
   "Given four triangles and a line goes through them, the covered part of the line should be invisible" in {
 
-    //    val triangles = List(Triangle3DMother.ABC)
     val triangles = List(Triangle3DMother.ABC, Triangle3DMother.BDE, Triangle3DMother.DFG, Triangle3DMother.FIG)
     val lines = Triangle3DMother.ABC.vertices ::: Triangle3DMother.BDE.vertices ::: Triangle3DMother.DFG.vertices ::: Triangle3DMother.FIG.vertices ::: List(Line3DMother.A)
-    //    val lines = List(Line3DMother.A)
 
-    val afterRemovalLines = HiddenLineRemovalUtils.removeHiddenLines(triangles, lines, 0.5)
+    val actual = HiddenLineRemovalUtils.removeHiddenLines(triangles, lines, 0.5)
 
-    afterRemovalLines.length must_== 3
+    actual.length must_== 16
 
   }
 
@@ -56,7 +44,7 @@ class HiddenLineRemovalUtilsSpec extends SpecificationBase {
 
     val afterRemovalLines = HiddenLineRemovalUtils.removeHiddenLines(triangles, lines, 0.5)
 
-    afterRemovalLines.length must_== 3
+    afterRemovalLines.length must_== 7
   }
 
   "Given a centrum" in {
@@ -79,7 +67,7 @@ class HiddenLineRemovalUtilsSpec extends SpecificationBase {
 
     val afterRemovalLines = HiddenLineRemovalUtils.removeHiddenLines(List(ABC, ABD, ADC, DBC), List(lineAB, lineAC, lineBC, lineAD, lineBD, lineCD), 0.5)
 
-    afterRemovalLines.length must_== 3
+    afterRemovalLines.length must_== 5
 
   }
 
@@ -103,7 +91,7 @@ class HiddenLineRemovalUtilsSpec extends SpecificationBase {
 
     val afterRemovalLines = HiddenLineRemovalUtils.removeHiddenLines(List(ABC, ABD, ADC, DBC), List(lineAB, lineAC, lineBC, lineAD, lineBD, lineCD), 0.5)
 
-    afterRemovalLines.length must_== 3
+    afterRemovalLines.length must_== 5
 
   }
 
@@ -126,7 +114,7 @@ class HiddenLineRemovalUtilsSpec extends SpecificationBase {
     //    afterRemovalLines.length must_== 0
     //    afterRemovalLines = HiddenLineRemovalUtils.removeHiddenLines(hex.composingTriangles, List(Line3D(A, B), Line3D(B, C), Line3D(C, D), Line3D(D, A), Line3D(D, H), Line3D(A, E), Line3D(B, F)), 0.5)
     val afterRemovalLines = HiddenLineRemovalUtils.removeHiddenLines(hex.composingTriangles, hex.composingVertices, 0.5)
-    afterRemovalLines.length must_== 7
+    afterRemovalLines.length must_== 14
   }
 
   "Given a strange shape 1" in {
@@ -146,7 +134,7 @@ class HiddenLineRemovalUtilsSpec extends SpecificationBase {
     val hex = new Hexahedron(A, B, C, D, E, F, G, H)
 
     val afterRemovalLines = HiddenLineRemovalUtils.removeHiddenLines(hex.composingTriangles, hex.composingVertices, 0.5)
-    afterRemovalLines.length must_== 7
+    afterRemovalLines.length must_== 14
   }
 
   "Given a strange shape 2" in {
@@ -166,7 +154,7 @@ class HiddenLineRemovalUtilsSpec extends SpecificationBase {
     val hex = new Hexahedron(A, B, C, D, E, F, G, H)
 
     val afterRemovalLines = HiddenLineRemovalUtils.removeHiddenLines(hex.composingTriangles, hex.composingVertices, 0.5)
-    afterRemovalLines.length must_== 7
+    afterRemovalLines.length must_== 14
   }
 
   "Given a strange shape 3" in {
@@ -186,7 +174,7 @@ class HiddenLineRemovalUtilsSpec extends SpecificationBase {
     val hex = new Hexahedron(A, B, C, D, E, F, G, H)
 
     val afterRemovalLines = HiddenLineRemovalUtils.removeHiddenLines(hex.composingTriangles, hex.composingVertices, 0.5)
-    afterRemovalLines.length must_== 7
+    afterRemovalLines.length must_== 14
   }
 
   "Given a strange shape 3 with fraction" in {
@@ -207,7 +195,7 @@ class HiddenLineRemovalUtilsSpec extends SpecificationBase {
 
     //    val afterRemovalLines = HiddenLineRemovalUtils.removeHiddenLines(hex.composingTriangles, List(Line3D(G, H)), 0.5)
     val afterRemovalLines = HiddenLineRemovalUtils.removeHiddenLines(hex.composingTriangles, hex.composingVertices, 0.5)
-    afterRemovalLines.length must_== 7
+    afterRemovalLines.length must_== 14
   }
 
   "XXXXXXXX" in {
