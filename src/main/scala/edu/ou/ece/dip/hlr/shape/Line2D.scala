@@ -3,11 +3,11 @@ package edu.ou.ece.dip.hlr.shape
 import scala.Math
 import edu.ou.ece.dip.hlr.utils.FloatUtil
 
-class Line2D(val start: Point2D, val end: Point2D) {
+class Line2D(val A: Point2D, val B: Point2D) {
 
   def slop: Option[Double] = {
-    val deltaX = end.x- start.x
-    val deltaY = end.y- start.y
+    val deltaX = B.x- A.x
+    val deltaY = B.y- A.y
 
     if(FloatUtil.Equals(deltaX, 0))
       return None
@@ -34,8 +34,8 @@ class Line2D(val start: Point2D, val end: Point2D) {
     if(this.isParallelTo(that))
       return None
 
-    val lambda: Double = -(-that.start.x * this.end.y + that.start.x * this.start.y - this.end.x * this.start.y + this.start.x * this.end.y + that.start.y * this.end.x - that.start.y * this.start.x) / (that.start.x * this.end.y - that.start.x * this.start.y - that.end.x * this.end.y + that.end.x * this.start.y - that.start.y * this.end.x + that.start.y * this.start.x + that.end.y * this.end.x - that.end.y * this.start.x)
-    val miu: Double = (-that.start.x * this.start.y + that.end.y * that.start.x - that.end.x * that.start.y + that.end.x * this.start.y - that.end.y * this.start.x + that.start.y * this.start.x) / (that.start.x * this.end.y - that.start.x * this.start.y - that.end.x * this.end.y + that.end.x * this.start.y - that.start.y * this.end.x + that.start.y * this.start.x + that.end.y * this.end.x - that.end.y * this.start.x)
+    val lambda: Double = -(-that.A.x * this.B.y + that.A.x * this.A.y - this.B.x * this.A.y + this.A.x * this.B.y + that.A.y * this.B.x - that.A.y * this.A.x) / (that.A.x * this.B.y - that.A.x * this.A.y - that.B.x * this.B.y + that.B.x * this.A.y - that.A.y * this.B.x + that.A.y * this.A.x + that.B.y * this.B.x - that.B.y * this.A.x)
+    val miu: Double = (-that.A.x * this.A.y + that.B.y * that.A.x - that.B.x * that.A.y + that.B.x * this.A.y - that.B.y * this.A.x + that.A.y * this.A.x) / (that.A.x * this.B.y - that.A.x * this.A.y - that.B.x * this.B.y + that.B.x * this.A.y - that.A.y * this.B.x + that.A.y * this.A.x + that.B.y * this.B.x - that.B.y * this.A.x)
 
     val lambdaIsBetweenZeroAndOne: Boolean = (FloatUtil.LessThan(lambda, 1) || FloatUtil.Equals(lambda, 1)) && (FloatUtil.GreaterThan(lambda, 0) || FloatUtil.Equals(lambda, 0))
     val miuIsBetweenZeroAndOne: Boolean = (FloatUtil.LessThan(miu, 1) || FloatUtil.Equals(miu, 1)) && (FloatUtil.GreaterThan(miu, 0) || FloatUtil.Equals(miu, 0))
@@ -46,30 +46,30 @@ class Line2D(val start: Point2D, val end: Point2D) {
   }
 
   def getPoint(coefficient: Double): Point2D = {
-    val x: Double = (1 - coefficient) * this.start.x + coefficient * this.end.x
-    val y: Double = (1 - coefficient) * this.start.y + coefficient * this.end.y
+    val x: Double = (1 - coefficient) * this.A.x + coefficient * this.B.x
+    val y: Double = (1 - coefficient) * this.A.y + coefficient * this.B.y
     new Point2D(x, y)
   }
 
   def getCoefficient(point: Point2D): Double = {
-    if (!FloatUtil.Equals((start.x - end.x), 0))
-      return (start.x - point.x) / (start.x - end.x)
+    if (!FloatUtil.Equals((A.x - B.x), 0))
+      return (A.x - point.x) / (A.x - B.x)
 
-    if (!FloatUtil.Equals((start.y - end.y), 0))
-      return (start.y - point.y) / (start.y - end.y)
+    if (!FloatUtil.Equals((A.y - B.y), 0))
+      return (A.y - point.y) / (A.y - B.y)
     0
   }
 
   def intersectExtension(that: Line2D): Option[Point2D] = {
-    val thisy1: Double = this.start.y
-    val thisy2: Double = this.end.y
-    val thisx1: Double = this.start.x
-    val thisx2: Double = this.end.x
+    val thisy1: Double = this.A.y
+    val thisy2: Double = this.B.y
+    val thisx1: Double = this.A.x
+    val thisx2: Double = this.B.x
 
-    val thaty1: Double = that.start.y
-    val thaty2: Double = that.end.y
-    val thatx1: Double = that.start.x
-    val thatx2: Double = that.end.x
+    val thaty1: Double = that.A.y
+    val thaty2: Double = that.B.y
+    val thatx1: Double = that.A.x
+    val thatx2: Double = that.B.x
 
     if (FloatUtil.Equals(thisx1, thisx2 ) && FloatUtil.Equals(thatx1, thatx2)) {
       return None
@@ -97,7 +97,7 @@ class Line2D(val start: Point2D, val end: Point2D) {
     Some(new Point2D(x, y))
   }
 
-  def length = Math.sqrt((end.x - start.x) * (end.x - start.x) + (end.y - start.y) * (end.y - start.y)).asInstanceOf[Double]
+  def length = Math.sqrt((B.x - A.x) * (B.x - A.x) + (B.y - A.y) * (B.y - A.y)).asInstanceOf[Double]
 
   override def equals(obj: Any): Boolean = {
     if (obj == null)
@@ -105,10 +105,10 @@ class Line2D(val start: Point2D, val end: Point2D) {
     if (!obj.isInstanceOf[Line2D])
       false
     val that = obj.asInstanceOf[Line2D]
-    ((this.start == that.start) && (this.end == that.end))
+    ((this.A == that.A) && (this.B == that.B))
   }
 
   override def hashCode: Int = {
-    start.hashCode + end.hashCode
+    A.hashCode + B.hashCode
   }
 }

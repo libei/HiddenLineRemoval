@@ -60,7 +60,7 @@ class ProjectedTriangleSpec extends SpecificationBase {
         val linesLeft = triangle.cover(line)
         linesLeft.length must_== 1
 
-        OneEndOfTheLineMustBe(linesLeft(0), line.end)
+        OneEndOfTheLineMustBe(linesLeft(0), line.B)
         OneEndOfTheLineMustBe(linesLeft(0), Point2D(0.78125, 0.104166))
       }
 
@@ -74,8 +74,8 @@ class ProjectedTriangleSpec extends SpecificationBase {
         val linesLeft = triangle.cover(line)
         linesLeft.length must_== 2
 
-        ContainsOneLineWhoseStartEndAre(linesLeft, Point2D(0.059701, 0.119402), line.start)
-        ContainsOneLineWhoseStartEndAre(linesLeft, Point2D(0.784615, 0.097435), line.end)
+        ContainsOneLineWhoseStartEndAre(linesLeft, Point2D(0.059701, 0.119402), line.A)
+        ContainsOneLineWhoseStartEndAre(linesLeft, Point2D(0.784615, 0.097435), line.B)
       }
 
       "Given " +
@@ -146,7 +146,7 @@ class ProjectedTriangleSpec extends SpecificationBase {
         val line = CameraUtils.project(Point3D(2.5, 5, 3) to Point3D(5, 0, 3), 0.5)
         val linesLeft = triangle.cover(line)
         linesLeft.length must_== 1
-        ContainsOneLineWhoseStartEndAre(List(linesLeft(0)), line.start, line.end)
+        ContainsOneLineWhoseStartEndAre(List(linesLeft(0)), line.A, line.B)
       }
     }
 

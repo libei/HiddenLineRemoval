@@ -41,17 +41,17 @@ class ProjectedLineSpec extends SpecificationBase {
     val newStart = new Point2D(1, 0.5)
     val newEnd = new Point2D(1, 1.5)
     val subLine = projected.subLine(newStart, newEnd)
-    subLine.start must_== newStart
-    subLine.end must_== newEnd
-    subLine.getOriginalPoint(subLine.start) == new Point3D(1, 0.5, 5)
-    subLine.getOriginalPoint(subLine.end) must_== new Point3D(1, 1.5, 5)
+    subLine.A must_== newStart
+    subLine.B must_== newEnd
+    subLine.getOriginalPoint(subLine.A) must_== new Point3D(1, 0.5, 5)
+    subLine.getOriginalPoint(subLine.B) must_== new Point3D(1, 1.5, 5)
   }
 
   "Should map a point to original point" in {
     val originalLine = new Line3D(new Point3D(-1, 0, 5), new Point3D(1, 0, 5))
     val projectedLine = CameraUtils.project(originalLine, 0.5)
-    projectedLine.getOriginalPoint(projectedLine.start).get must_== originalLine.start
-    projectedLine.getOriginalPoint(projectedLine.end).get must_== originalLine.end
+    projectedLine.getOriginalPoint(projectedLine.A).get must_== originalLine.A
+    projectedLine.getOriginalPoint(projectedLine.B).get must_== originalLine.B
   }
   
 }

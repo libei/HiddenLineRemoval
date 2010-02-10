@@ -4,11 +4,11 @@ import edu.ou.ece.dip.hlr.utils.FloatUtil
 
 class Vector(val xComponent: Double, val yComponent: Double, val zComponent: Double) {
   def this(line: Line3D) {
-    this(line.end.x - line.start.x, line.end.y - line.start.y, line.end.z - line.start.z)
+    this(line.B.x - line.A.x, line.B.y - line.A.y, line.B.z - line.A.z)
   }
 
   def this(line: Line2D) {
-    this(line.end.x - line.start.x, line.end.y - line.start.y, 0)
+    this(line.B.x - line.A.x, line.B.y - line.A.y, 0)
   }
 
   def dotProduct(that: Vector): Double =

@@ -8,9 +8,9 @@ class ProjectedTriangle(vertexAB: ProjectedLine, vertexBC: ProjectedLine, vertex
   vertices.append(vertexAB)
   vertices.append(vertexBC)
   vertices.append(vertexCA)
-  val cornerA = vertexAB.start
-  val cornerB = vertexAB.end
-  val cornerC = vertexBC.end
+  val cornerA = vertexAB.A
+  val cornerB = vertexAB.B
+  val cornerC = vertexBC.B
 
   def sign(x: Double): Double = {
     if (FloatUtil.Equals(x, 0))
@@ -49,7 +49,7 @@ class ProjectedTriangle(vertexAB: ProjectedLine, vertexBC: ProjectedLine, vertex
   }
 
   def isInside(line: Line2D): Boolean = {
-    isInside(line.start) && isInside(line.end)
+    isInside(line.A) && isInside(line.B)
   }
 
   def intersect(line: ProjectedLine): Set[Point2D] = {
@@ -102,12 +102,12 @@ class ProjectedTriangle(vertexAB: ProjectedLine, vertexBC: ProjectedLine, vertex
     if (intersections.size == 1) {
       val i = intersections.toList(0)
 
-      val theOnlyIntersectionIsAtTheEndOfTheLine = projectedLine.start == i || projectedLine.end == i
+      val theOnlyIntersectionIsAtTheEndOfTheLine = projectedLine.A == i || projectedLine.B == i
       if (theOnlyIntersectionIsAtTheEndOfTheLine) {
-        val startOriginal = projectedLine.getOriginalPoint(projectedLine.start).get
-        val endOriginal = projectedLine.getOriginalPoint(projectedLine.end).get
+        val startOriginal = projectedLine.getOriginalPoint(projectedLine.A).get
+        val endOriginal = projectedLine.getOriginalPoint(projectedLine.B).get
 
-        if (oneEndIsOneThePlateAnotherIsCovered(projectedLine.start, projectedLine.end, startOriginal, endOriginal))
+        if (oneEndIsOneThePlateAnotherIsCovered(projectedLine.A, projectedLine.B, startOriginal, endOriginal))
           return List()
 
         if (bothCovered(startOriginal, endOriginal))
@@ -117,10 +117,10 @@ class ProjectedTriangle(vertexAB: ProjectedLine, vertexBC: ProjectedLine, vertex
       }
 
       val (endpointOutsideTriangle, originalEndpointInsideTriangle) =
-      if (isInside(projectedLine.start))
-        (projectedLine.end, projectedLine.getOriginalPoint(projectedLine.start))
+      if (isInside(projectedLine.A))
+        (projectedLine.B, projectedLine.getOriginalPoint(projectedLine.A))
       else
-        (projectedLine.start, projectedLine.getOriginalPoint(projectedLine.end))
+        (projectedLine.A, projectedLine.getOriginalPoint(projectedLine.B))
 
       if (originalTriangle.isCloserThan(originalEndpointInsideTriangle.get))
         return List(projectedLine.subLine(endpointOutsideTriangle, i))
@@ -149,12 +149,12 @@ class ProjectedTriangle(vertexAB: ProjectedLine, vertexBC: ProjectedLine, vertex
       if (!isStartVisible || !isEndVisible)
         return List()
 
-      if (intersectionOne.distanceTo(projectedLine.start) < intersectionTwo.distanceTo(projectedLine.start)) {
-        return List(projectedLine.subLine(projectedLine.start, intersectionOne),
-          projectedLine.subLine(intersectionTwo, projectedLine.end))
+      if (intersectionOne.distanceTo(projectedLine.A) < intersectionTwo.distanceTo(projectedLine.A)) {
+        return List(projectedLine.subLine(projectedLine.A, intersectionOne),
+          projectedLine.subLine(intersectionTwo, projectedLine.B))
       } else {
-        return List(projectedLine.subLine(projectedLine.start, intersectionTwo),
-          projectedLine.subLine(intersectionOne, projectedLine.end))
+        return List(projectedLine.subLine(projectedLine.A, intersectionTwo),
+          projectedLine.subLine(intersectionOne, projectedLine.B))
       }
     }
     original

@@ -1,6 +1,6 @@
 package edu.ou.ece.dip.hlr.shape
 
-class ProjectedLine(start: Point2D, end: Point2D, originalLine: Line3D, val focalLength: Double) extends Line2D(start, end) {
+class ProjectedLine(start: Point2D, end: Point2D, originalLine: Line3D, focalLength: Double) extends Line2D(start, end) {
   def subLine(start: Point2D, end: Point2D): ProjectedLine = {
     new ProjectedLine(start, end, originalLine, focalLength)
   }

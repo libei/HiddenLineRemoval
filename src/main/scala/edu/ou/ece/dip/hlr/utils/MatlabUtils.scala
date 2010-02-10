@@ -8,7 +8,7 @@ object MatlabUtils {
     if(lines.length == 0)
       builder.append("---------empty----------")
     lines.foreach(l => {
-      builder.append("line([" + l.start.x +" " + l.end.x + "], ["+ l.start.y +" " + l.end.y +"]);")
+      builder.append("line([" + l.A.x +" " + l.B.x + "], ["+ l.A.y +" " + l.B.y +"]);")
     })
     "figure;" + builder.toString
   }

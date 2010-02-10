@@ -20,8 +20,8 @@ object CameraUtils {
 
   def project(line: Line3D, focalLength: Double): ProjectedLine = {
 
-    val start = project(line.start, focalLength)
-    val end = project(line.end, focalLength)
+    val start = project(line.A, focalLength)
+    val end = project(line.B, focalLength)
 
     new ProjectedLine(start, end, line, focalLength)
   }

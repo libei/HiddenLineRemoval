@@ -20,10 +20,10 @@ class CameraUtilsSpec extends SpecificationBase {
 
       val actual = CameraUtils.project(A to B, 2.0)
 
-      actual.start.x must_== 4
-      actual.start.y must_== 4
-      actual.end.x must_== 16
-      actual.end.y must_== 16
+      actual.A.x must_== 4
+      actual.A.y must_== 4
+      actual.B.x must_== 16
+      actual.B.y must_== 16
     }
 
     "project triangle" in {

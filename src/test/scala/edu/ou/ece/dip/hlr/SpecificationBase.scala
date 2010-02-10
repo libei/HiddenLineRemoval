@@ -6,12 +6,12 @@ import org.specs.{SpecificationWithJUnit}
 
 class SpecificationBase extends SpecificationWithJUnit  with xUnit  {
   def AreEqual(actual: Line3D, expected: Line3D) {
-    AreEqual(actual.start, expected.start)
-    AreEqual(actual.end, expected.end)
+    AreEqual(actual.A, expected.A)
+    AreEqual(actual.B, expected.B)
   }
 
   def AreEqual(actual: ProjectedLine, expected: ProjectedLine) {
-    AreEqual(actual.start, expected.start)
+    AreEqual(actual.A, expected.A)
   }
 
   def AreEqual(actual: Point2D, expected: Point2D) {
@@ -26,8 +26,8 @@ class SpecificationBase extends SpecificationWithJUnit  with xUnit  {
   }
 
   def AreEqual(actual: Line2D, expected: Line2D) {
-    OneEndOfTheLineMustBe(actual, expected.start)
-    OneEndOfTheLineMustBe(actual, expected.end)
+    OneEndOfTheLineMustBe(actual, expected.A)
+    OneEndOfTheLineMustBe(actual, expected.B)
   }
 
   def AreEqual(actual: Double, expected: Double) {
@@ -36,13 +36,13 @@ class SpecificationBase extends SpecificationWithJUnit  with xUnit  {
 
   def OneEndOfTheLineMustBe(line: Line2D, end: Point2D) {
     Console.out.println(line.toString)
-    assertTrue(line.start == end || line.end == end)
+    assertTrue(line.A == end || line.B == end)
   }
 
   def ContainsOneLineWhoseStartEndAre(lines: List[ProjectedLine], endPoint1: Point2D, endPoint2: Point2D) {
     lines.foreach(l => {
       Console.out.println(l.toString)
-      if((l.start == endPoint1 && l.end == endPoint2) || (l.start == endPoint2 && l.end == endPoint1))
+      if((l.A == endPoint1 && l.B == endPoint2) || (l.A == endPoint2 && l.B == endPoint1))
         return
     })
     assertTrue(false)
