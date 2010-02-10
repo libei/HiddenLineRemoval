@@ -6,10 +6,10 @@ import edu.ou.ece.dip.hlr.shape._
 object HiddenLineRemovalUtils {
   def removeHiddenLines(triangles: List[Triangle3D], lines: List[Line3D], focalLength: Double): List[ProjectedLine] = {
 
-    var currentLines = CameraProjectionUtils.projectLines(lines, focalLength)
+    var currentLines = CameraUtils.projectLines(lines, focalLength)
     Console.out.println(MatlabUtils.generateMatrixForLineDisplay(currentLines))
 
-    val projectedTriangles = CameraProjectionUtils.projectTriangles(triangles, focalLength)
+    val projectedTriangles = CameraUtils.projectTriangles(triangles, focalLength)
     projectedTriangles.foreach(t => {
       currentLines = removeHiddenLinesForOne(t, currentLines)
       Console.out.println(t.originalTriangle.toString)

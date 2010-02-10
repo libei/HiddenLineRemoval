@@ -4,24 +4,24 @@ import edu.ou.ece.dip.hlr.shape
 import shape._
 import collection.mutable.ListBuffer
 
-object CameraProjectionUtils {
+object CameraUtils {
   def projectTriangle(triangle: Triangle3D, focalLength: Double): ProjectedTriangle = {
 
-    new ProjectedTriangle(projectLine(triangle.getVertexAB, focalLength),
-      projectLine(triangle.getVertexBC, focalLength),
-      projectLine(triangle.getVertexCA, focalLength), triangle
+    new ProjectedTriangle(project(triangle.getVertexAB, focalLength),
+      project(triangle.getVertexBC, focalLength),
+      project(triangle.getVertexCA, focalLength), triangle
       )
   }
 
-  def projectPoint(point: Point3D, focalLength: Double): Point2D = {
+  def project(point: Point3D, focalLength: Double): Point2D = {
     new Point2D((focalLength * point.x) / (point.z),
       (focalLength * point.y) / (point.z))
   }
 
-  def projectLine(line: Line3D, focalLength: Double): ProjectedLine = {
+  def project(line: Line3D, focalLength: Double): ProjectedLine = {
 
-    val start = projectPoint(line.start, focalLength)
-    val end = projectPoint(line.end, focalLength)
+    val start = project(line.start, focalLength)
+    val end = project(line.end, focalLength)
 
     new ProjectedLine(start, end, line, focalLength)
   }
@@ -29,7 +29,7 @@ object CameraProjectionUtils {
   def projectLines(lines: List[Line3D], focalLength: Double): List[ProjectedLine] = {
     val projectedLines = new ListBuffer[ProjectedLine]
     lines.foreach(l => {
-      projectedLines.append(projectLine(l, focalLength))
+      projectedLines.append(project(l, focalLength))
     })
     projectedLines.toList
   }

@@ -2,41 +2,14 @@
 <project version="4">
   <component name="ChangeListManager" verified="true">
     <list default="true" id="242eafd1-f5f8-433c-95ec-27698fb83ad7" name="Default" comment="">
-      <change type="MOVED" beforePath="C:\Documents and Settings\bli\IdeaProjects\HiddenLineRemoval\src\main\scala\edu\ou\ece\dip\hir\shape\Vector.scala" afterPath="$PROJECT_DIR$/src/main/scala/edu/ou/ece/dip/hlr/shape/Vector.scala" />
-      <change type="MOVED" beforePath="C:\Documents and Settings\bli\IdeaProjects\HiddenLineRemoval\src\test\scala\edu\ou\ece\dip\hir\shape\ProjectedLineSpec.scala" afterPath="$PROJECT_DIR$/src/test/scala/edu/ou/ece/dip/hlr/shape/ProjectedLineSpec.scala" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/scala/edu/ou/ece/dip/hlr/utils/CameraUtilsSpec.scala" />
+      <change type="MOVED" beforePath="C:\Documents and Settings\bli\IdeaProjects\HiddenLineRemoval\src\main\scala\edu\ou\ece\dip\hlr\utils\CameraProjectionUtils.scala" afterPath="$PROJECT_DIR$/src/main/scala/edu/ou/ece/dip/hlr/utils/CameraUtils.scala" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/HiddenLineRemoval.iws" afterPath="$PROJECT_DIR$/HiddenLineRemoval.iws" />
-      <change type="MOVED" beforePath="C:\Documents and Settings\bli\IdeaProjects\HiddenLineRemoval\src\main\scala\edu\ou\ece\dip\hir\shape\ProjectedTriangle.scala" afterPath="$PROJECT_DIR$/src/main/scala/edu/ou/ece/dip/hlr/shape/ProjectedTriangle.scala" />
-      <change type="MOVED" beforePath="C:\Documents and Settings\bli\IdeaProjects\HiddenLineRemoval\src\test\scala\edu\ou\ece\dip\hir\shape\Line3DSpec.scala" afterPath="$PROJECT_DIR$/src/test/scala/edu/ou/ece/dip/hlr/shape/Line3DSpec.scala" />
-      <change type="MOVED" beforePath="C:\Documents and Settings\bli\IdeaProjects\HiddenLineRemoval\src\test\scala\edu\ou\ece\dip\hir\shape\VectorSpec.scala" afterPath="$PROJECT_DIR$/src/test/scala/edu/ou/ece/dip/hlr/shape/VectorSpec.scala" />
-      <change type="MOVED" beforePath="C:\Documents and Settings\bli\IdeaProjects\HiddenLineRemoval\src\test\scala\edu\ou\ece\dip\hir\utils\HiddenLineRemovalUtilsSpec.scala" afterPath="$PROJECT_DIR$/src/test/scala/edu/ou/ece/dip/hlr/utils/HiddenLineRemovalUtilsSpec.scala" />
-      <change type="MOVED" beforePath="C:\Documents and Settings\bli\IdeaProjects\HiddenLineRemoval\src\main\scala\edu\ou\ece\dip\hir\console\Runner.scala" afterPath="$PROJECT_DIR$/src/main/scala/edu/ou/ece/dip/hlr/console/Runner.scala" />
-      <change type="MOVED" beforePath="C:\Documents and Settings\bli\IdeaProjects\HiddenLineRemoval\src\main\scala\edu\ou\ece\dip\hir\shape\Line3D.scala" afterPath="$PROJECT_DIR$/src/main/scala/edu/ou/ece/dip/hlr/shape/Line3D.scala" />
-      <change type="MOVED" beforePath="C:\Documents and Settings\bli\IdeaProjects\HiddenLineRemoval\src\test\scala\edu\ou\ece\dip\hir\shape\Point2DSpec.scala" afterPath="$PROJECT_DIR$/src/test/scala/edu/ou/ece/dip/hlr/shape/Point2DSpec.scala" />
-      <change type="MOVED" beforePath="C:\Documents and Settings\bli\IdeaProjects\HiddenLineRemoval\src\test\scala\edu\ou\ece\dip\hir\utils\FloatUtilSpec.scala" afterPath="$PROJECT_DIR$/src/test/scala/edu/ou/ece/dip/hlr/utils/FloatUtilSpec.scala" />
-      <change type="MOVED" beforePath="C:\Documents and Settings\bli\IdeaProjects\HiddenLineRemoval\src\main\scala\edu\ou\ece\dip\hir\shape\ProjectedLine.scala" afterPath="$PROJECT_DIR$/src/main/scala/edu/ou/ece/dip/hlr/shape/ProjectedLine.scala" />
-      <change type="MOVED" beforePath="C:\Documents and Settings\bli\IdeaProjects\HiddenLineRemoval\src\test\scala\edu\ou\ece\dip\hir\SpecificationBase.scala" afterPath="$PROJECT_DIR$/src/test/scala/edu/ou/ece/dip/hlr/SpecificationBase.scala" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/scala/objectmother/Triangle3DMother.scala" afterPath="$PROJECT_DIR$/src/test/scala/objectmother/Triangle3DMother.scala" />
-      <change type="MOVED" beforePath="C:\Documents and Settings\bli\IdeaProjects\HiddenLineRemoval\src\main\scala\edu\ou\ece\dip\hir\shape\Hexahedron.scala" afterPath="$PROJECT_DIR$/src/main/scala/edu/ou/ece/dip/hlr/shape/Hexahedron.scala" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/scala/objectmother/HexahedronMother.scala" afterPath="$PROJECT_DIR$/src/test/scala/objectmother/HexahedronMother.scala" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/scala/objectmother/Line3DMother.scala" afterPath="$PROJECT_DIR$/src/test/scala/objectmother/Line3DMother.scala" />
-      <change type="MOVED" beforePath="C:\Documents and Settings\bli\IdeaProjects\HiddenLineRemoval\src\main\scala\edu\ou\ece\dip\hir\utils\HiddenLineRemovalUtils.scala" afterPath="$PROJECT_DIR$/src/main/scala/edu/ou/ece/dip/hlr/utils/HiddenLineRemovalUtils.scala" />
-      <change type="MOVED" beforePath="C:\Documents and Settings\bli\IdeaProjects\HiddenLineRemoval\src\test\scala\edu\ou\ece\dip\hir\shape\Line2DSpec.scala" afterPath="$PROJECT_DIR$/src/test/scala/edu/ou/ece/dip/hlr/shape/Line2DSpec.scala" />
-      <change type="MOVED" beforePath="C:\Documents and Settings\bli\IdeaProjects\HiddenLineRemoval\src\test\scala\edu\ou\ece\dip\hir\shape\Triangle3DSpec.scala" afterPath="$PROJECT_DIR$/src/test/scala/edu/ou/ece/dip/hlr/shape/Triangle3DSpec.scala" />
-      <change type="MOVED" beforePath="C:\Documents and Settings\bli\IdeaProjects\HiddenLineRemoval\src\test\scala\edu\ou\ece\dip\hir\utils\CameraProjectionUtilsSpec.scala" afterPath="$PROJECT_DIR$/src/test/scala/edu/ou/ece/dip/hlr/utils/CameraProjectionUtilsSpec.scala" />
-      <change type="MOVED" beforePath="C:\Documents and Settings\bli\IdeaProjects\HiddenLineRemoval\src\main\scala\edu\ou\ece\dip\hir\controller\ProjectionController.scala" afterPath="$PROJECT_DIR$/src/main/scala/edu/ou/ece/dip/hlr/controller/ProjectionController.scala" />
-      <change type="MOVED" beforePath="C:\Documents and Settings\bli\IdeaProjects\HiddenLineRemoval\src\main\scala\edu\ou\ece\dip\hir\shape\Point3D.scala" afterPath="$PROJECT_DIR$/src/main/scala/edu/ou/ece/dip/hlr/shape/Point3D.scala" />
-      <change type="MOVED" beforePath="C:\Documents and Settings\bli\IdeaProjects\HiddenLineRemoval\src\test\scala\edu\ou\ece\dip\hir\shape\HexahedronSpec.scala" afterPath="$PROJECT_DIR$/src/test/scala/edu/ou/ece/dip/hlr/shape/HexahedronSpec.scala" />
-      <change type="MOVED" beforePath="C:\Documents and Settings\bli\IdeaProjects\HiddenLineRemoval\src\main\scala\edu\ou\ece\dip\hir\shape\Line2D.scala" afterPath="$PROJECT_DIR$/src/main/scala/edu/ou/ece/dip/hlr/shape/Line2D.scala" />
-      <change type="MOVED" beforePath="C:\Documents and Settings\bli\IdeaProjects\HiddenLineRemoval\src\main\scala\edu\ou\ece\dip\hir\utils\MatlabUtils.scala" afterPath="$PROJECT_DIR$/src/main/scala/edu/ou/ece/dip/hlr/utils/MatlabUtils.scala" />
-      <change type="MOVED" beforePath="C:\Documents and Settings\bli\IdeaProjects\HiddenLineRemoval\src\main\scala\edu\ou\ece\dip\hir\utils\CameraProjectionUtils.scala" afterPath="$PROJECT_DIR$/src/main/scala/edu/ou/ece/dip/hlr/utils/CameraProjectionUtils.scala" />
-      <change type="MOVED" beforePath="C:\Documents and Settings\bli\IdeaProjects\HiddenLineRemoval\src\main\scala\edu\ou\ece\dip\hir\utils\FloatUtil.scala" afterPath="$PROJECT_DIR$/src/main/scala/edu/ou/ece/dip/hlr/utils/FloatUtil.scala" />
-      <change type="MOVED" beforePath="C:\Documents and Settings\bli\IdeaProjects\HiddenLineRemoval\src\main\scala\edu\ou\ece\dip\hir\shape\Point2D.scala" afterPath="$PROJECT_DIR$/src/main/scala/edu/ou/ece/dip/hlr/shape/Point2D.scala" />
-      <change type="MOVED" beforePath="C:\Documents and Settings\bli\IdeaProjects\HiddenLineRemoval\src\main\scala\edu\ou\ece\dip\hir\shape\Triangle3D.scala" afterPath="$PROJECT_DIR$/src/main/scala/edu/ou/ece/dip/hlr/shape/Triangle3D.scala" />
-      <change type="MOVED" beforePath="C:\Documents and Settings\bli\IdeaProjects\HiddenLineRemoval\src\main\scala\edu\ou\ece\dip\hir\shape\Trapezoid3D.scala" afterPath="$PROJECT_DIR$/src/main/scala/edu/ou/ece/dip/hlr/shape/Trapezoid3D.scala" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/scala/objectmother/ProjectedTriangleMother.scala" afterPath="$PROJECT_DIR$/src/test/scala/objectmother/ProjectedTriangleMother.scala" />
-      <change type="MOVED" beforePath="C:\Documents and Settings\bli\IdeaProjects\HiddenLineRemoval\src\test\scala\edu\ou\ece\dip\hir\shape\Trapezoid3DSpec.scala" afterPath="$PROJECT_DIR$/src/test/scala/edu/ou/ece/dip/hlr/shape/Trapezoid3DSpec.scala" />
-      <change type="MOVED" beforePath="C:\Documents and Settings\bli\IdeaProjects\HiddenLineRemoval\src\test\scala\edu\ou\ece\dip\hir\shape\ProjectedTriangleSpec.scala" afterPath="$PROJECT_DIR$/src/test/scala/edu/ou/ece/dip/hlr/shape/ProjectedTriangleSpec.scala" />
-      <change type="MOVED" beforePath="C:\Documents and Settings\bli\IdeaProjects\HiddenLineRemoval\src\main\scala\edu\ou\ece\dip\hir\view\ProjectionView.scala" afterPath="$PROJECT_DIR$/src/main/scala/edu/ou/ece/dip/hlr/view/ProjectionView.scala" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/scala/edu/ou/ece/dip/hlr/utils/HiddenLineRemovalUtils.scala" afterPath="$PROJECT_DIR$/src/main/scala/edu/ou/ece/dip/hlr/utils/HiddenLineRemovalUtils.scala" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/scala/edu/ou/ece/dip/hlr/shape/ProjectedLineSpec.scala" afterPath="$PROJECT_DIR$/src/test/scala/edu/ou/ece/dip/hlr/shape/ProjectedLineSpec.scala" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/scala/edu/ou/ece/dip/hlr/shape/ProjectedTriangleSpec.scala" afterPath="$PROJECT_DIR$/src/test/scala/edu/ou/ece/dip/hlr/shape/ProjectedTriangleSpec.scala" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/scala/edu/ou/ece/dip/hlr/shape/ProjectedTriangle.scala" afterPath="$PROJECT_DIR$/src/main/scala/edu/ou/ece/dip/hlr/shape/ProjectedTriangle.scala" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\bli\IdeaProjects\HiddenLineRemoval\src\test\scala\edu\ou\ece\dip\hlr\utils\CameraProjectionUtilsSpec.scala" afterPath="" />
     </list>
     <ignored path="HiddenLineRemoval.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -128,91 +101,28 @@
   <component name="FileColors" enabled="true" enabledForTabs="true" />
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Line3DSpec.scala" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/scala/edu/ou/ece/dip/hlr/shape/Line3DSpec.scala">
+      <file leaf-file-name="CameraUtilsSpec.scala" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/scala/edu/ou/ece/dip/hlr/utils/CameraUtilsSpec.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="20" column="23" selection-start="638" selection-end="638" vertical-scroll-proportion="0.0">
+            <state line="12" column="31" selection-start="331" selection-end="331" vertical-scroll-proportion="0.43283582">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ProjectedLineSpec.scala" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/scala/edu/ou/ece/dip/hlr/shape/ProjectedLineSpec.scala">
+      <file leaf-file-name="CameraUtils.scala" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/scala/edu/ou/ece/dip/hlr/utils/CameraUtils.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="54" selection-start="166" selection-end="166" vertical-scroll-proportion="0.0">
+            <state line="15" column="6" selection-start="427" selection-end="427" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="HexahedronSpec.scala" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/scala/edu/ou/ece/dip/hlr/shape/HexahedronSpec.scala">
+      <file leaf-file-name="HiddenLineRemovalUtilsSpec.scala" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/scala/edu/ou/ece/dip/hlr/utils/HiddenLineRemovalUtilsSpec.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="46" selection-start="196" selection-end="196" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ProjectedTriangleSpec.scala" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/scala/edu/ou/ece/dip/hlr/shape/ProjectedTriangleSpec.scala">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="133" column="0" selection-start="5635" selection-end="5635" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Trapezoid3DSpec.scala" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/scala/edu/ou/ece/dip/hlr/shape/Trapezoid3DSpec.scala">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="0" selection-start="380" selection-end="380" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="FloatUtilSpec.scala" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/scala/edu/ou/ece/dip/hlr/utils/FloatUtilSpec.scala">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="0" selection-start="241" selection-end="241" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CameraProjectionUtilsSpec.scala" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/scala/edu/ou/ece/dip/hlr/utils/CameraProjectionUtilsSpec.scala">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="0" selection-start="384" selection-end="384" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SpecificationBase.scala" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/scala/edu/ou/ece/dip/hlr/SpecificationBase.scala">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="25" selection-start="25" selection-end="25" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ProjectedTriangleMother.scala" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/scala/objectmother/ProjectedTriangleMother.scala">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="7" selection-start="114" selection-end="114" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Line2D.scala" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/scala/edu/ou/ece/dip/hlr/shape/Line2D.scala">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="23" selection-start="33" selection-end="33" vertical-scroll-proportion="0.05821918">
+            <state line="12" column="13" selection-start="526" selection-end="526" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -236,8 +146,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/test/scala/edu/ou/ece/dip/hir/shape/Line2DSpec.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/edu/ou/ece/dip/hir/shape/Triangle3D.scala" />
         <option value="$PROJECT_DIR$/src/test/scala/edu/ou/ece/dip/hir/shape/Triangle3DSpec.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/edu/ou/ece/dip/hir/shape/Point2D.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/edu/ou/ece/dip/hir/shape/Point3D.scala" />
@@ -252,6 +160,8 @@
         <option value="$PROJECT_DIR$/src/test/scala/edu/ou/ece/dip/hir/shape/ProjectedLineSpec.scala" />
         <option value="$PROJECT_DIR$/src/test/scala/edu/ou/ece/dip/hir/utils/CameraProjectionUtilsSpec.scala" />
         <option value="$PROJECT_DIR$/src/test/scala/edu/ou/ece/dip/hlr/SpecificationBase.scala" />
+        <option value="$PROJECT_DIR$/src/test/scala/edu/ou/ece/dip/hlr/utils/CameraProjectionUtilsSpec.scala" />
+        <option value="$PROJECT_DIR$/src/test/scala/edu/ou/ece/dip/hlr/utils/CameraUtilsSpec.scala" />
       </list>
     </option>
   </component>
@@ -553,16 +463,7 @@
       <recent name="edu.ou.ece.dip.hir.shape" />
     </key>
   </component>
-  <component name="RunManager" selected="Specs.CameraProjectionUtilsSpec">
-    <configuration default="false" name="ProjectedLineSpec" type="SpecsRunConfiguration" factoryName="Specs" temporary="true">
-      <module name="HiddenLineRemoval" />
-      <setting name="path" value="edu.ou.ece.dip.hir.shape.ProjectedLineSpec" />
-      <setting name="vmparams" value="" />
-      <setting name="params" value="" />
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Run" />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="Specs.CameraUtilsSpec">
     <configuration default="false" name="Trapezoid3DSpec" type="SpecsRunConfiguration" factoryName="Specs" temporary="true">
       <module name="HiddenLineRemoval" />
       <setting name="path" value="edu.ou.ece.dip.hir.shape.Trapezoid3DSpec" />
@@ -592,7 +493,16 @@
     </configuration>
     <configuration default="false" name="CameraProjectionUtilsSpec" type="SpecsRunConfiguration" factoryName="Specs" temporary="true">
       <module name="HiddenLineRemoval" />
-      <setting name="path" value="edu.ou.ece.dip.hir.utils.CameraProjectionUtilsSpec" />
+      <setting name="path" value="edu.ou.ece.dip.hlr.utils.CameraProjectionUtilsSpec" />
+      <setting name="vmparams" value="" />
+      <setting name="params" value="" />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="CameraUtilsSpec" type="SpecsRunConfiguration" factoryName="Specs" temporary="true">
+      <module name="HiddenLineRemoval" />
+      <setting name="path" value="edu.ou.ece.dip.hlr.utils.CameraUtilsSpec" />
       <setting name="vmparams" value="" />
       <setting name="params" value="" />
       <RunnerSettings RunnerId="Run" />
@@ -781,11 +691,11 @@
       </method>
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Specs.ProjectedLineSpec" />
-      <item index="1" class="java.lang.String" itemvalue="Specs.Trapezoid3DSpec" />
-      <item index="2" class="java.lang.String" itemvalue="Specs.VectorSpec" />
-      <item index="3" class="java.lang.String" itemvalue="Specs.FloatUtilSpec" />
-      <item index="4" class="java.lang.String" itemvalue="Specs.CameraProjectionUtilsSpec" />
+      <item index="0" class="java.lang.String" itemvalue="Specs.Trapezoid3DSpec" />
+      <item index="1" class="java.lang.String" itemvalue="Specs.VectorSpec" />
+      <item index="2" class="java.lang.String" itemvalue="Specs.FloatUtilSpec" />
+      <item index="3" class="java.lang.String" itemvalue="Specs.CameraProjectionUtilsSpec" />
+      <item index="4" class="java.lang.String" itemvalue="Specs.CameraUtilsSpec" />
     </list>
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
       <Host>localhost</Host>
@@ -844,9 +754,9 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.21763754" sideWeight="0.6976744" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32958034" sideWeight="0.66721857" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32958034" sideWeight="0.5976821" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32119206" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.39072847" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.10440123" sideWeight="0.5844371" order="2" side_tool="false" content_ui="combo" />
@@ -865,7 +775,7 @@
     <option name="PERFORM_ROLLBACK_IN_BACKGROUND" value="false" />
     <option name="CHECK_LOCALLY_CHANGED_CONFLICTS_IN_BACKGROUND" value="true" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="clean up code" />
+    <option name="LAST_COMMIT_MESSAGE" value="rename namespace to hlr" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="true" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -884,6 +794,7 @@
     <MESSAGE value="add domain speicif method to Point2D" />
     <MESSAGE value="add domain speicif method to Point3D" />
     <MESSAGE value="clean up code" />
+    <MESSAGE value="rename namespace to hlr" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -893,20 +804,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/scala/edu/ou/ece/dip/hlr/shape/Point2D.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="8" selection-start="226" selection-end="226" vertical-scroll-proportion="0.04956268">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/scala/edu/ou/ece/dip/hlr/shape/Point2DSpec.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="28" selection-start="386" selection-end="386" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/edu/ou/ece/dip/hlr/shape/Line3D.scala">
       <provider selected="true" editor-type-id="text-editor">
         <state line="19" column="16" selection-start="849" selection-end="849" vertical-scroll-proportion="-12.92">
@@ -935,51 +832,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/scala/edu/ou/ece/dip/hlr/shape/HexahedronSpec.scala">
+    <entry file="file://$PROJECT_DIR$/src/main/scala/edu/ou/ece/dip/hlr/shape/Line2D.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="46" selection-start="196" selection-end="196" vertical-scroll-proportion="0.0">
+        <state line="4" column="11" selection-start="94" selection-end="94" vertical-scroll-proportion="0.23287672">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/scala/edu/ou/ece/dip/hlr/shape/Line3DSpec.scala">
+    <entry file="file://$PROJECT_DIR$/src/test/scala/objectmother/ProjectedTriangleMother.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="23" selection-start="638" selection-end="638" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/scala/edu/ou/ece/dip/hlr/shape/ProjectedLineSpec.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="54" selection-start="166" selection-end="166" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/scala/edu/ou/ece/dip/hlr/shape/ProjectedTriangleSpec.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="133" column="0" selection-start="5635" selection-end="5635" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/scala/edu/ou/ece/dip/hlr/shape/Trapezoid3DSpec.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="0" selection-start="380" selection-end="380" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/scala/edu/ou/ece/dip/hlr/utils/FloatUtilSpec.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="0" selection-start="241" selection-end="241" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/scala/edu/ou/ece/dip/hlr/utils/CameraProjectionUtilsSpec.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="0" selection-start="384" selection-end="384" vertical-scroll-proportion="0.0">
+        <state line="4" column="7" selection-start="114" selection-end="114" vertical-scroll-proportion="0.20858896">
           <folding />
         </state>
       </provider>
@@ -991,16 +853,65 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/scala/objectmother/ProjectedTriangleMother.scala">
+    <entry file="file://$PROJECT_DIR$/src/test/scala/edu/ou/ece/dip/hlr/utils/FloatUtilSpec.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="7" selection-start="114" selection-end="114" vertical-scroll-proportion="0.0">
+        <state line="8" column="0" selection-start="241" selection-end="241" vertical-scroll-proportion="0.39650145">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/edu/ou/ece/dip/hlr/shape/Line2D.scala">
+    <entry file="file://$PROJECT_DIR$/src/test/scala/edu/ou/ece/dip/hlr/shape/Trapezoid3DSpec.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="23" selection-start="33" selection-end="33" vertical-scroll-proportion="0.05821918">
+        <state line="10" column="0" selection-start="380" selection-end="380" vertical-scroll-proportion="-0.46388888">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/scala/edu/ou/ece/dip/hlr/shape/ProjectedTriangleSpec.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="133" column="0" selection-start="5635" selection-end="5635" vertical-scroll-proportion="6.591837">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/scala/edu/ou/ece/dip/hlr/shape/HexahedronSpec.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="46" selection-start="196" selection-end="196" vertical-scroll-proportion="0.27055702">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/scala/edu/ou/ece/dip/hlr/shape/ProjectedLineSpec.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="54" selection-start="166" selection-end="166" vertical-scroll-proportion="0.18888889">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/scala/edu/ou/ece/dip/hlr/shape/Line3DSpec.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="23" selection-start="638" selection-end="638" vertical-scroll-proportion="0.9018568">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/scala/edu/ou/ece/dip/hlr/utils/HiddenLineRemovalUtilsSpec.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="13" selection-start="526" selection-end="526" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/edu/ou/ece/dip/hlr/utils/CameraUtils.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="6" selection-start="427" selection-end="427" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/scala/edu/ou/ece/dip/hlr/utils/CameraUtilsSpec.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="31" selection-start="331" selection-end="331" vertical-scroll-proportion="0.43283582">
           <folding />
         </state>
       </provider>

@@ -2,7 +2,7 @@ package edu.ou.ece.dip.hlr.shape
 
 import org.specs.runner.ScalaTest
 import edu.ou.ece.dip.hlr.SpecificationBase
-import edu.ou.ece.dip.hlr.utils.{CameraProjectionUtils}
+import edu.ou.ece.dip.hlr.utils.{CameraUtils}
 
 class ProjectedLineSpec extends SpecificationBase {
 
@@ -49,7 +49,7 @@ class ProjectedLineSpec extends SpecificationBase {
 
   "Should map a point to original point" in {
     val originalLine = new Line3D(new Point3D(-1, 0, 5), new Point3D(1, 0, 5))
-    val projectedLine = CameraProjectionUtils.projectLine(originalLine, 0.5)
+    val projectedLine = CameraUtils.project(originalLine, 0.5)
     projectedLine.getOriginalPoint(projectedLine.start).get must_== originalLine.start
     projectedLine.getOriginalPoint(projectedLine.end).get must_== originalLine.end
   }
