@@ -11,15 +11,18 @@ class Triangle3DSpec extends SpecificationBase {
     "tell if it is closer to the camera than a point " >> {
 
       "Given a point closer to the camera, it should return false" >> {
-        triangle.isCloserThan(Point3D(0, 0, 1)) must_== false
+        triangle isCloserThan Point3D(0, 0, 1)  must_== false
+        triangle |* Point3D(0, 0, 1) must_== false
       }
 
       "Given a point further to the camera, it should return true" >> {
-        triangle.isCloserThan(Point3D(0, 0, 6)) must_== true
+        triangle isCloserThan Point3D(0, 0, 6) must_== true
+        triangle |* Point3D(0, 0,  6) must_== true
       }
 
       "Given a point with the same distance to the camera, it should return false" >> {
-        triangle.isCloserThan(Point3D(0, 0, 5)) must_== false
+        triangle isCloserThan Point3D(0, 0, 5) must_== false
+        triangle |* Point3D(0, 0,  5) must_== false
       }
     }
 
@@ -36,15 +39,5 @@ class Triangle3DSpec extends SpecificationBase {
     //        triangle.isCloserThan(Point3D(0, 0, 5)) must_== false
     //      }
     //    }
-
-    "pick up a right crossproduct ??" in {
-      val triangle = new Triangle3D(Point3D(0, 0, 5),
-        Point3D(4.5, 0, 5),
-        Point3D(2.5, 4.5, 5))
-
-      triangle.isNotBehind(Point3D(0, 0, 10)) must_== true
-      triangle.isNotBehind(Point3D(0, 0, 1)) must_== false
-    }
-
   }
 }

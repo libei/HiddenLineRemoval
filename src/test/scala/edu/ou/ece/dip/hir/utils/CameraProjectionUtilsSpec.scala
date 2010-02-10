@@ -4,7 +4,7 @@ import runner.{ScalaTest}
 import edu.ou.ece.dip.hir.shape.{Point2D, Line3D, Point3D}
 
 class CameraProjectionUtilsSpec extends Specification with ScalaTest {
-
+ 
   "Camera projection" should {
     "project integer point" in {
       val expected = CameraProjectionUtils.projectPoint(new Point3D(1, 3, 4), 2.0)
@@ -19,6 +19,7 @@ class CameraProjectionUtilsSpec extends Specification with ScalaTest {
     }
 
     "project line" in {
+      
       val startPoint = new Point3D(1, 3, 6)
       val endPoint = new Point3D(5, 4, 4)
 

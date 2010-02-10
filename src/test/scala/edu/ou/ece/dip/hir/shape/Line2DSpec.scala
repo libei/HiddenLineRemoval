@@ -8,7 +8,6 @@ class Line2DSpec extends SpecificationBase {
       "Given" >> {
         val line: Line2D = new Line2D(new Point2D(0, 0), new Point2D(2, 2))
         AreEqual(line.length, 2.828427)
-
       }
 
       "Given two point at the same position, the length should be zero" >> {

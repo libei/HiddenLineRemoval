@@ -12,24 +12,32 @@ class Triangle3D(val cornerA: Point3D, val cornerB: Point3D, val cornerC: Point3
   val lineAB: Line3D = new Line3D(cornerA, cornerB)
   val lineBC: Line3D = new Line3D(cornerB, cornerC)
   val lineCA: Line3D = new Line3D(cornerC, cornerA)
-
   val vertices = List(lineAB, lineBC, lineCA)
-
   def getVertexAB = lineAB
-
   def getVertexBC = lineBC
-
   def getVertexCA = lineCA
-
-  def isNotBehind(point: Point3D): Boolean = {
-    FloatUtil.GreaterThan(depth(point), 0) || isEqual(point)
-  }
 
   def isBehind(point: Point3D): Boolean = {
     FloatUtil.LessThan(depth(point), 0)
   }
 
   def isEqual(point: Point3D): Boolean = {
+    FloatUtil.Equals(depth(point), 0)
+  }
+
+  def isCloserThan(point: Point3D): Boolean = {
+    FloatUtil.GreaterThan(depth(point), 0)
+  }
+
+  def *| (point: Point3D): Boolean = {
+    FloatUtil.LessThan(depth(point), 0)
+  }
+
+  def |* (point: Point3D): Boolean = {
+    FloatUtil.GreaterThan(depth(point), 0)
+  }
+
+  def |*| (point: Point3D): Boolean = {
     FloatUtil.Equals(depth(point), 0)
   }
 
@@ -46,10 +54,5 @@ class Triangle3D(val cornerA: Point3D, val cornerB: Point3D, val cornerC: Point3
     val positiveZCrossProduct = if (crossProductABAC.dotProduct(vectorPointToOriginal) < 0) crossProductABAC else crossProductACAB
     positiveZCrossProduct.dotProduct(vectorALine)
   }
-
-  def isCloserThan(point: Point3D): Boolean = {
-    FloatUtil.GreaterThan(depth(point), 0)
-  }
-
   override def toString = "%(" + cornerA.toString + " " + cornerB.toString + " " + cornerC.toString + ")"
 }
