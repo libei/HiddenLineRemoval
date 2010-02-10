@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager" verified="true">
     <list default="true" id="242eafd1-f5f8-433c-95ec-27698fb83ad7" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/scala/edu/ou/ece/dip/hlr/shape/Trapezoid3DSpec.scala" afterPath="$PROJECT_DIR$/src/test/scala/edu/ou/ece/dip/hlr/shape/Trapezoid3DSpec.scala" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/scala/edu/ou/ece/dip/hlr/utils/FloatUtilSpec.scala" afterPath="$PROJECT_DIR$/src/test/scala/edu/ou/ece/dip/hlr/utils/FloatUtilSpec.scala" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/scala/edu/ou/ece/dip/hlr/utils/FloatUtil.scala" afterPath="$PROJECT_DIR$/src/main/scala/edu/ou/ece/dip/hlr/utils/FloatUtil.scala" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/HiddenLineRemoval.iws" afterPath="$PROJECT_DIR$/HiddenLineRemoval.iws" />
     </list>
     <ignored path=".idea/workspace.xml" />
@@ -130,10 +131,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Trapezoid3DSpec.scala" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/test/scala/edu/ou/ece/dip/hlr/shape/Trapezoid3DSpec.scala">
+      <file leaf-file-name="FloatUtil.scala" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/scala/edu/ou/ece/dip/hlr/utils/FloatUtil.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="41" selection-start="636" selection-end="636" vertical-scroll-proportion="0.70989764">
+            <state line="4" column="6" selection-start="60" selection-end="60" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="FloatUtilSpec.scala" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/scala/edu/ou/ece/dip/hlr/utils/FloatUtilSpec.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="27" column="56" selection-start="960" selection-end="960" vertical-scroll-proportion="0.45945945">
               <folding />
             </state>
           </provider>
@@ -202,8 +212,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/test/scala/edu/ou/ece/dip/hlr/shape/HexahedronSpec.scala" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/test/scala/edu/ou/ece/dip/hlr/shape/Triangle3DSpec.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/edu/ou/ece/dip/hlr/shape/ProjectedLine.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/edu/ou/ece/dip/hlr/shape/Line2D.scala" />
@@ -218,6 +226,8 @@
         <option value="$PROJECT_DIR$/src/test/scala/edu/ou/ece/dip/hlr/SpecificationBase.scala" />
         <option value="$PROJECT_DIR$/src/test/scala/edu/ou/ece/dip/hlr/shape/ProjectedTriangleSpec.scala" />
         <option value="$PROJECT_DIR$/src/test/scala/edu/ou/ece/dip/hlr/shape/Trapezoid3DSpec.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/edu/ou/ece/dip/hlr/utils/FloatUtil.scala" />
+        <option value="$PROJECT_DIR$/src/test/scala/edu/ou/ece/dip/hlr/utils/FloatUtilSpec.scala" />
       </list>
     </option>
   </component>
@@ -467,16 +477,7 @@
       <recent name="edu.ou.ece.dip.hir.shape" />
     </key>
   </component>
-  <component name="RunManager" selected="Specs.Trapezoid3DSpec">
-    <configuration default="false" name="Triangle3DSpec" type="SpecsRunConfiguration" factoryName="Specs" temporary="true">
-      <module name="HiddenLineRemoval" />
-      <setting name="path" value="edu.ou.ece.dip.hlr.shape.Triangle3DSpec" />
-      <setting name="vmparams" value="" />
-      <setting name="params" value="" />
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Run" />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="Specs.FloatUtilSpec">
     <configuration default="false" name="ProjectedTriangleSpec" type="SpecsRunConfiguration" factoryName="Specs" temporary="true">
       <module name="HiddenLineRemoval" />
       <setting name="path" value="edu.ou.ece.dip.hlr.shape.ProjectedTriangleSpec" />
@@ -519,6 +520,15 @@
     <configuration default="false" name="Trapezoid3DSpec" type="SpecsRunConfiguration" factoryName="Specs" temporary="true">
       <module name="HiddenLineRemoval" />
       <setting name="path" value="edu.ou.ece.dip.hlr.shape.Trapezoid3DSpec" />
+      <setting name="vmparams" value="" />
+      <setting name="params" value="" />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="FloatUtilSpec" type="SpecsRunConfiguration" factoryName="Specs" temporary="true">
+      <module name="HiddenLineRemoval" />
+      <setting name="path" value="edu.ou.ece.dip.hlr.utils.FloatUtilSpec" />
       <setting name="vmparams" value="" />
       <setting name="params" value="" />
       <RunnerSettings RunnerId="Run" />
@@ -707,11 +717,11 @@
       </method>
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Specs.Triangle3DSpec" />
-      <item index="1" class="java.lang.String" itemvalue="Specs.ProjectedTriangleSpec" />
-      <item index="2" class="java.lang.String" itemvalue="Specs.HiddenLineRemovalUtilsSpec" />
-      <item index="3" class="java.lang.String" itemvalue="Specs.ProjectedLineSpec" />
-      <item index="4" class="java.lang.String" itemvalue="Specs.Trapezoid3DSpec" />
+      <item index="0" class="java.lang.String" itemvalue="Specs.ProjectedTriangleSpec" />
+      <item index="1" class="java.lang.String" itemvalue="Specs.HiddenLineRemovalUtilsSpec" />
+      <item index="2" class="java.lang.String" itemvalue="Specs.ProjectedLineSpec" />
+      <item index="3" class="java.lang.String" itemvalue="Specs.Trapezoid3DSpec" />
+      <item index="4" class="java.lang.String" itemvalue="Specs.FloatUtilSpec" />
     </list>
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
       <Host>localhost</Host>
@@ -824,20 +834,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/scala/edu/ou/ece/dip/hlr/shape/Vector.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="20" selection-start="184" selection-end="184" vertical-scroll-proportion="0.030303031">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/edu/ou/ece/dip/hlr/utils/CameraUtils.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="27" selection-start="727" selection-end="727" vertical-scroll-proportion="0.18181819">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/scala/objectmother/Triangle3DMother.scala">
       <provider selected="true" editor-type-id="text-editor">
         <state line="10" column="51" selection-start="338" selection-end="338" vertical-scroll-proportion="0.4524715">
@@ -922,6 +918,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/scala/edu/ou/ece/dip/hlr/shape/Trapezoid3DSpec.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="46" selection-start="676" selection-end="676" vertical-scroll-proportion="0.7679181">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/scala/edu/ou/ece/dip/hlr/shape/ProjectedTriangleSpec.scala">
       <provider selected="true" editor-type-id="text-editor">
         <state line="136" column="31" selection-start="5862" selection-end="5862" vertical-scroll-proportion="-6.8">
@@ -929,9 +932,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/scala/edu/ou/ece/dip/hlr/shape/Trapezoid3DSpec.scala">
+    <entry file="file://$PROJECT_DIR$/src/main/scala/edu/ou/ece/dip/hlr/utils/FloatUtil.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="41" selection-start="636" selection-end="636" vertical-scroll-proportion="0.70989764">
+        <state line="4" column="6" selection-start="60" selection-end="60" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/scala/edu/ou/ece/dip/hlr/utils/FloatUtilSpec.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="27" column="56" selection-start="960" selection-end="960" vertical-scroll-proportion="0.45945945">
           <folding />
         </state>
       </provider>

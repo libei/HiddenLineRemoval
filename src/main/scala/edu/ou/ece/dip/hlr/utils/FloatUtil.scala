@@ -2,7 +2,7 @@ package edu.ou.ece.dip.hlr.utils
 
 object FloatUtil {
 
-  private val EPSION = 5E-8
+  val EPSION = 5E-8
   
   def Equals(thiz: Double, that: Double): Boolean = Math.abs(thiz - that) <= EPSION
 
