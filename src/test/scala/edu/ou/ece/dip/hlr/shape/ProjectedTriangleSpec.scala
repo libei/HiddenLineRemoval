@@ -2,7 +2,7 @@ package edu.ou.ece.dip.hlr.shape
 
 import edu.ou.ece.dip.hlr.SpecificationBase
 import objectmother.{ProjectedLineMother, ProjectedTriangleMother}
-import edu.ou.ece.dip.hlr.utils.CameraUtils
+import edu.ou.ece.dip.hlr.utils.{MatlabUtils, CameraUtils}
 
 class ProjectedTriangleSpec extends SpecificationBase {
   
@@ -35,6 +35,7 @@ class ProjectedTriangleSpec extends SpecificationBase {
       val triangle = CameraUtils.projectTriangle(Triangle3D(Point3D(0, 0, 3),
         Point3D(5, 0, 3),
         Point3D(2.5, 5, 3)), 0.5)
+
       "Given a line closer to the camera than the triangle" in {
         val line = CameraUtils.project(Point3D(0, 0, 2) to Point3D(5, 5, 2), 0.5)
         val linesLeft = triangle.cover(line)
@@ -48,7 +49,6 @@ class ProjectedTriangleSpec extends SpecificationBase {
         AreEqual(linesLeft(0), line)
       }
 
-
       "Given" +
               "# line is further to the camera than the triangle" +
               "# line intersects with one vertex of triangle " +
@@ -56,12 +56,10 @@ class ProjectedTriangleSpec extends SpecificationBase {
               "# one end of the line is outside of the projected triangle" +
               "Then the line is partialy covered" >> {
         val line = CameraUtils.project(Point3D(2.5, 1, 4) to Point3D(15, 1, 6), 0.5)
-
         val linesLeft = triangle.cover(line)
         linesLeft.length must_== 1
-
         OneEndOfTheLineMustBe(linesLeft(0), line.B)
-        OneEndOfTheLineMustBe(linesLeft(0), Point2D(0.78125, 0.104166))
+        OneEndOfTheLineMustBe(linesLeft(0), Point2D(0.78125000, 0.1041666666))
       }
 
       "Given " +
@@ -74,8 +72,8 @@ class ProjectedTriangleSpec extends SpecificationBase {
         val linesLeft = triangle.cover(line)
         linesLeft.length must_== 2
 
-        ContainsOneLineWhoseStartEndAre(linesLeft, Point2D(0.059701, 0.119402), line.A)
-        ContainsOneLineWhoseStartEndAre(linesLeft, Point2D(0.784615, 0.097435), line.B)
+        ContainsOneLineWhoseStartEndAre(linesLeft, Point2D(0.0597014925, 0.1194029850), line.A)
+        ContainsOneLineWhoseStartEndAre(linesLeft, Point2D(0.78461538, 0.097435897), line.B)
       }
 
       "Given " +
@@ -131,14 +129,14 @@ class ProjectedTriangleSpec extends SpecificationBase {
         AreEqual(linesLeft(0), line)
       }
 
-
       "Given " +
               "# one end of the line is on one corner of the triangle" +
               "# and intersects with one vertex and intersection is behind the vertex" +
               "Then the line is invisible" in {
         val line = CameraUtils.project(Point3D(2.5, 5, 3) to Point3D(2.5, -20, 3.5), 0.5)
         val linesLeft = triangle.cover(line)
-        linesLeft.length must_== 0
+        linesLeft.length must_== 1
+        ContainsOneLineWhoseStartEndAre(linesLeft, Point2D(0.4032258064, 0.0), line.B)
       }
 
       "Given a line lies on one vertex of the triangle" +

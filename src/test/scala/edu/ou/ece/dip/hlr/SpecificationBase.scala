@@ -35,11 +35,14 @@ class SpecificationBase extends SpecificationWithJUnit  with xUnit  {
   }
 
   def OneEndOfTheLineMustBe(line: Line2D, end: Point2D) {
-    Console.out.println(line.toString)
+    println("Actual Line:" + line.toString)
+    println("Expected End:" + end.toString)
     assertTrue(line.A == end || line.B == end)
   }
 
   def ContainsOneLineWhoseStartEndAre(lines: List[ProjectedLine], endPoint1: Point2D, endPoint2: Point2D) {
+    println("Expected Point1:" + endPoint1.toString)
+    println("Expected Point2:" + endPoint2.toString)
     lines.foreach(l => {
       Console.out.println(l.toString)
       if((l.A == endPoint1 && l.B == endPoint2) || (l.A == endPoint2 && l.B == endPoint1))
