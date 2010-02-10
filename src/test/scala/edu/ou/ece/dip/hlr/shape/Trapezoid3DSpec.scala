@@ -14,9 +14,9 @@ class Trapezoid3DSpec extends SpecificationBase {
     triangles.length must_== 2
     triangles(0).cornerA must_== pointA
     triangles(0).cornerB must_== pointB
-    triangles(0).cornerC must_== pointD
+    triangles(0).cornerC must_== pointC
 
-    triangles(1).cornerA must_== pointB
+    triangles(1).cornerA must_== pointA
     triangles(1).cornerB must_== pointC
     triangles(1).cornerC must_== pointD
   }

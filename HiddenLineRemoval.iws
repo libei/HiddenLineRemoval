@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager" verified="true">
-    <list default="true" id="242eafd1-f5f8-433c-95ec-27698fb83ad7" name="Default" comment="fix tests">
+    <list default="true" id="242eafd1-f5f8-433c-95ec-27698fb83ad7" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/scala/edu/ou/ece/dip/hlr/shape/Trapezoid3DSpec.scala" afterPath="$PROJECT_DIR$/src/test/scala/edu/ou/ece/dip/hlr/shape/Trapezoid3DSpec.scala" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/HiddenLineRemoval.iws" afterPath="$PROJECT_DIR$/HiddenLineRemoval.iws" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/scala/edu/ou/ece/dip/hlr/SpecificationBase.scala" afterPath="$PROJECT_DIR$/src/test/scala/edu/ou/ece/dip/hlr/SpecificationBase.scala" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/scala/edu/ou/ece/dip/hlr/shape/ProjectedTriangleSpec.scala" afterPath="$PROJECT_DIR$/src/test/scala/edu/ou/ece/dip/hlr/shape/ProjectedTriangleSpec.scala" />
     </list>
     <ignored path=".idea/workspace.xml" />
     <ignored path="HiddenLineRemoval.iws" />
@@ -122,10 +121,19 @@
   <component name="FileColors" enabled="true" enabledForTabs="true" />
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="ProjectedTriangleSpec.scala" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="ProjectedTriangleSpec.scala" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/scala/edu/ou/ece/dip/hlr/shape/ProjectedTriangleSpec.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="139" column="23" selection-start="6005" selection-end="6005" vertical-scroll-proportion="0.8804781">
+            <state line="136" column="31" selection-start="5862" selection-end="5862" vertical-scroll-proportion="-6.8">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Trapezoid3DSpec.scala" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/scala/edu/ou/ece/dip/hlr/shape/Trapezoid3DSpec.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="17" column="41" selection-start="636" selection-end="636" vertical-scroll-proportion="0.70989764">
               <folding />
             </state>
           </provider>
@@ -194,7 +202,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/test/scala/edu/ou/ece/dip/hlr/shape/VectorSpec.scala" />
         <option value="$PROJECT_DIR$/src/test/scala/edu/ou/ece/dip/hlr/shape/HexahedronSpec.scala" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/test/scala/edu/ou/ece/dip/hlr/shape/Triangle3DSpec.scala" />
@@ -210,6 +217,7 @@
         <option value="$PROJECT_DIR$/src/test/scala/edu/ou/ece/dip/hlr/shape/ProjectedLineSpec.scala" />
         <option value="$PROJECT_DIR$/src/test/scala/edu/ou/ece/dip/hlr/SpecificationBase.scala" />
         <option value="$PROJECT_DIR$/src/test/scala/edu/ou/ece/dip/hlr/shape/ProjectedTriangleSpec.scala" />
+        <option value="$PROJECT_DIR$/src/test/scala/edu/ou/ece/dip/hlr/shape/Trapezoid3DSpec.scala" />
       </list>
     </option>
   </component>
@@ -459,16 +467,7 @@
       <recent name="edu.ou.ece.dip.hir.shape" />
     </key>
   </component>
-  <component name="RunManager" selected="Specs.ProjectedTriangleSpec">
-    <configuration default="false" name="HexahedronSpec" type="SpecsRunConfiguration" factoryName="Specs" temporary="true">
-      <module name="HiddenLineRemoval" />
-      <setting name="path" value="edu.ou.ece.dip.hlr.shape.HexahedronSpec" />
-      <setting name="vmparams" value="" />
-      <setting name="params" value="" />
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Run" />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="Specs.Trapezoid3DSpec">
     <configuration default="false" name="Triangle3DSpec" type="SpecsRunConfiguration" factoryName="Specs" temporary="true">
       <module name="HiddenLineRemoval" />
       <setting name="path" value="edu.ou.ece.dip.hlr.shape.Triangle3DSpec" />
@@ -511,6 +510,15 @@
     <configuration default="false" name="ProjectedLineSpec" type="SpecsRunConfiguration" factoryName="Specs" temporary="true">
       <module name="HiddenLineRemoval" />
       <setting name="path" value="edu.ou.ece.dip.hlr.shape.ProjectedLineSpec" />
+      <setting name="vmparams" value="" />
+      <setting name="params" value="" />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="Trapezoid3DSpec" type="SpecsRunConfiguration" factoryName="Specs" temporary="true">
+      <module name="HiddenLineRemoval" />
+      <setting name="path" value="edu.ou.ece.dip.hlr.shape.Trapezoid3DSpec" />
       <setting name="vmparams" value="" />
       <setting name="params" value="" />
       <RunnerSettings RunnerId="Run" />
@@ -699,11 +707,11 @@
       </method>
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Specs.HexahedronSpec" />
-      <item index="1" class="java.lang.String" itemvalue="Specs.Triangle3DSpec" />
-      <item index="2" class="java.lang.String" itemvalue="Specs.ProjectedTriangleSpec" />
-      <item index="3" class="java.lang.String" itemvalue="Specs.HiddenLineRemovalUtilsSpec" />
-      <item index="4" class="java.lang.String" itemvalue="Specs.ProjectedLineSpec" />
+      <item index="0" class="java.lang.String" itemvalue="Specs.Triangle3DSpec" />
+      <item index="1" class="java.lang.String" itemvalue="Specs.ProjectedTriangleSpec" />
+      <item index="2" class="java.lang.String" itemvalue="Specs.HiddenLineRemovalUtilsSpec" />
+      <item index="3" class="java.lang.String" itemvalue="Specs.ProjectedLineSpec" />
+      <item index="4" class="java.lang.String" itemvalue="Specs.Trapezoid3DSpec" />
     </list>
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
       <Host>localhost</Host>
@@ -816,13 +824,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/scala/edu/ou/ece/dip/hlr/shape/Line3D.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="22" selection-start="582" selection-end="582" vertical-scroll-proportion="0.03125">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/edu/ou/ece/dip/hlr/shape/Vector.scala">
       <provider selected="true" editor-type-id="text-editor">
         <state line="5" column="20" selection-start="184" selection-end="184" vertical-scroll-proportion="0.030303031">
@@ -923,7 +924,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/scala/edu/ou/ece/dip/hlr/shape/ProjectedTriangleSpec.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="139" column="23" selection-start="6005" selection-end="6005" vertical-scroll-proportion="0.8804781">
+        <state line="136" column="31" selection-start="5862" selection-end="5862" vertical-scroll-proportion="-6.8">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/scala/edu/ou/ece/dip/hlr/shape/Trapezoid3DSpec.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="41" selection-start="636" selection-end="636" vertical-scroll-proportion="0.70989764">
           <folding />
         </state>
       </provider>
