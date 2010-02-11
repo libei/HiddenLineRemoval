@@ -1,7 +1,7 @@
 package edu.ou.ece.dip.hlr.shape
 
 import collection.mutable.{ListBuffer}
-import edu.ou.ece.dip.hlr.utils.{LineUtils, FloatUtil, CameraUtils}
+import edu.ou.ece.dip.hlr.utils.{LineUtils, FloatUtil}
 
 class ProjectedTriangle(AB: ProjectedLine, BC: ProjectedLine, CA: ProjectedLine, val originalTriangle: Triangle3D) {
   private val _vertices = new ListBuffer[ProjectedLine]
