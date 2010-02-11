@@ -156,7 +156,7 @@ class ProjectedTriangle(AB: ProjectedLine, BC: ProjectedLine, CA: ProjectedLine,
     original
   }
 
-  def isPointVisible(point2D: Point2D, point3D: Point3D): Boolean = {
+  private def isPointVisible(point2D: Point2D, point3D: Point3D): Boolean = {
     if (!isInside(point2D))
       return true
     
