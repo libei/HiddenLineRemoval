@@ -92,10 +92,21 @@ class ProjectedTriangle(vertexAB: ProjectedLine, vertexBC: ProjectedLine, vertex
   }
   
   private def _cover(projectedLine: ProjectedLine): List[ProjectedLine] = {
+    if(FloatUtil.Equals(projectedLine.length, 0))
+      return List()
+    
     val original = List(projectedLine)
 
     var intersections = intersect(projectedLine)
+    if (intersections.size == 0) {
+      val A3D = projectedLine.getOriginalPoint(projectedLine.A).get
+      val B3D = projectedLine.getOriginalPoint(projectedLine.B).get
 
+      val ACovered = (originalTriangle |* A3D) && isInside(projectedLine.A)
+      val BCovered = (originalTriangle |* B3D) && isInside(projectedLine.B)
+      if(ACovered || BCovered)
+        return List()
+    }
     if (intersections.size == 1) {
       val i = intersections.toList(0)
 
