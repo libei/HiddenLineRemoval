@@ -3,16 +3,16 @@ package edu.ou.ece.dip.hlr.shape
 import collection.mutable.{ListBuffer}
 import edu.ou.ece.dip.hlr.utils.{LineUtils, FloatUtil, CameraUtils}
 
-class ProjectedTriangle(vertexAB: ProjectedLine, vertexBC: ProjectedLine, vertexCA: ProjectedLine, val originalTriangle: Triangle3D) {
+class ProjectedTriangle(AB: ProjectedLine, BC: ProjectedLine, CA: ProjectedLine, val originalTriangle: Triangle3D) {
   private val _vertices = new ListBuffer[ProjectedLine]
-  _vertices.append(vertexAB)
-  _vertices.append(vertexBC)
-  _vertices.append(vertexCA)
+  _vertices.append(AB)
+  _vertices.append(BC)
+  _vertices.append(CA)
   val vertices = _vertices.toList
 
-  val A = vertexAB.A
-  val B = vertexAB.B
-  val C = vertexBC.B
+  val A = AB.A
+  val B = AB.B
+  val C = BC.B
 
   private def sign(x: Double): Double = {
     if (FloatUtil.Equals(x, 0))
@@ -25,17 +25,17 @@ class ProjectedTriangle(vertexAB: ProjectedLine, vertexBC: ProjectedLine, vertex
       return true
 
     val vectorAT: Vector = new Vector(new Line2D(A, point))
-    val vectorAB: Vector = new Vector(vertexAB)
+    val vectorAB: Vector = new Vector(AB)
     val productABAT: Vector = vectorAB.crossProduct(vectorAT)
     val signABAT = sign(productABAT.zComponent) //todo this way to tell direction of a vector might be wrong
 
     val vectorBT: Vector = new Vector(new Line2D(B, point))
-    val vectorBC: Vector = new Vector(vertexBC)
+    val vectorBC: Vector = new Vector(BC)
     val productBCBT: Vector = vectorBC.crossProduct(vectorBT)
     val signBCBT = sign(productBCBT.zComponent)
 
     val vectorCT: Vector = new Vector(new Line2D(C, point))
-    val vectorCA: Vector = new Vector(vertexCA)
+    val vectorCA: Vector = new Vector(CA)
     val productCACT: Vector = vectorCA.crossProduct(vectorCT)
     val signCACT = sign(productCACT.zComponent)
 
@@ -85,10 +85,7 @@ class ProjectedTriangle(vertexAB: ProjectedLine, vertexBC: ProjectedLine, vertex
   }
 
   private def bothCovered(start2D: Point2D, start: Point3D, end2D: Point2D, end: Point3D): Boolean = {
-    val startCovered = originalTriangle.isCloserThan(start) && isInside(start2D)
-    val endCovered = originalTriangle.isCloserThan(end) && isInside(end2D)
-
-    startCovered && endCovered
+    !isPointVisible(start2D, start) && !isPointVisible(end2D, end)
   }
   
   private def _cover(projectedLine: ProjectedLine): List[ProjectedLine] = {
