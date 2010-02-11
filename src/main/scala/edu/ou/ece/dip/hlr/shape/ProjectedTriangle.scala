@@ -84,50 +84,50 @@ class ProjectedTriangle(AB: ProjectedLine, BC: ProjectedLine, CA: ProjectedLine,
     (isStartPointCovered && isEndPointOnThePlate) || (isStartPointOnThePlate && isEndPointCovered)
   }
 
-  private def bothCovered(start2D: Point2D, start: Point3D, end2D: Point2D, end: Point3D): Boolean = {
-    !isPointVisible(start2D, start) && !isPointVisible(end2D, end)
+  private def bothCovered(start2D: Point2D, start3D: Point3D, end2D: Point2D, end3D: Point3D): Boolean = {
+    !isPointVisible(start2D, start3D) && !isPointVisible(end2D, end3D)
   }
   
   private def _cover(projectedLine: ProjectedLine): List[ProjectedLine] = {
     if(FloatUtil.Equals(projectedLine.length, 0))
       return List()
+
+    val pA = projectedLine.A
+    val pB = projectedLine.B
+    val pA3D = projectedLine.getOriginalPoint(pA).get
+    val pB3D = projectedLine.getOriginalPoint(pB).get
     
     val original = List(projectedLine)
 
     var intersections = intersect(projectedLine)
     if (intersections.size == 0) {
-      val A3D = projectedLine.getOriginalPoint(projectedLine.A).get
-      val B3D = projectedLine.getOriginalPoint(projectedLine.B).get
-
-      val ACovered = (originalTriangle |* A3D) && isInside(projectedLine.A)
-      val BCovered = (originalTriangle |* B3D) && isInside(projectedLine.B)
+      val ACovered = !isPointVisible(pA, pA3D)
+      val BCovered = !isPointVisible(pB, pB3D)
+      
       if(ACovered || BCovered)
         return List()
     }
     if (intersections.size == 1) {
       val i = intersections.toList(0)
 
-      val theOnlyIntersectionIsAtTheEndOfTheLine = projectedLine.A == i || projectedLine.B == i
+      val theOnlyIntersectionIsAtTheEndOfTheLine = pA == i || pB == i
       if (theOnlyIntersectionIsAtTheEndOfTheLine) {
-        val startOriginal = projectedLine.getOriginalPoint(projectedLine.A).get
-        val endOriginal = projectedLine.getOriginalPoint(projectedLine.B).get
-
-        if (oneEndIsOneThePlateAnotherIsCovered(projectedLine.A, projectedLine.B, startOriginal, endOriginal))
+        if (oneEndIsOneThePlateAnotherIsCovered(pA, pB, pA3D, pB3D))
           return List()
 
-        if (bothCovered(projectedLine.A, startOriginal, projectedLine.B, endOriginal))
+        if (bothCovered(pA, pA3D, pB, pB3D))
           return List()
 
         return original
       }
 
       val (endpointOutsideTriangle, originalEndpointInsideTriangle) =
-      if (isInside(projectedLine.A))
-        (projectedLine.B, projectedLine.getOriginalPoint(projectedLine.A))
+      if (isInside(pA))
+        (pB, pA3D)
       else
-        (projectedLine.A, projectedLine.getOriginalPoint(projectedLine.B))
+        (pA, pB3D)
 
-      if (originalTriangle.isCloserThan(originalEndpointInsideTriangle.get))
+      if (originalTriangle.isCloserThan(originalEndpointInsideTriangle))
         return List(projectedLine.subLine(endpointOutsideTriangle, i))
       else
         return original
@@ -145,23 +145,21 @@ class ProjectedTriangle(AB: ProjectedLine, BC: ProjectedLine, CA: ProjectedLine,
       if (isStartVisible && isEndVisible)
         return original
 
-      if (intersectionOne.distanceTo(projectedLine.A) < intersectionTwo.distanceTo(projectedLine.A)) {
-        return List(projectedLine.subLine(projectedLine.A, intersectionOne),
-          projectedLine.subLine(intersectionTwo, projectedLine.B))
+      if (intersectionOne.distanceTo(pA) < intersectionTwo.distanceTo(pA)) {
+        return List(projectedLine.subLine(pA, intersectionOne),
+          projectedLine.subLine(intersectionTwo, pB))
       } else {
-        return List(projectedLine.subLine(projectedLine.A, intersectionTwo),
-          projectedLine.subLine(intersectionOne, projectedLine.B))
+        return List(projectedLine.subLine(pA, intersectionTwo),
+          projectedLine.subLine(intersectionOne, pB))
       }
     }
     original
   }
 
-  def isPointVisible(projectPoint: Point2D, originalPoint: Point3D): Boolean = {
-    if (!isInside(projectPoint))
+  def isPointVisible(point2D: Point2D, point3D: Point3D): Boolean = {
+    if (!isInside(point2D))
       return true
     
-    val behind: Boolean = originalTriangle *| originalPoint
-    val equal: Boolean = originalTriangle |*| originalPoint
-    behind || equal
+    (originalTriangle *| point3D) || (originalTriangle |*| point3D)
   }
 }
