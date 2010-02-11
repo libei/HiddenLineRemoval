@@ -99,6 +99,16 @@ class Line2D(val A: Point2D, val B: Point2D) {
 
   def length = Math.sqrt((B.x - A.x) * (B.x - A.x) + (B.y - A.y) * (B.y - A.y)).asInstanceOf[Double]
 
+  def equalsIgnoreDirection(obj: Any): Boolean = {
+    if (obj == null)
+      false
+    if (!obj.isInstanceOf[Line2D])
+      false
+    val that = obj.asInstanceOf[Line2D]
+    ((this.A == that.A) && (this.B == that.B)) || ((this.A == that.B) && (this.B == that.A)) 
+
+  }
+
   override def equals(obj: Any): Boolean = {
     if (obj == null)
       false

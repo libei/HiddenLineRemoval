@@ -22,11 +22,9 @@ object HiddenLineRemovalUtils {
   private def removeHiddenLinesForOne(triangle: ProjectedTriangle, lines: List[ProjectedLine]): List[ProjectedLine] = {
 
     val newLines = new ListBuffer[ProjectedLine]();
-
     lines.foreach(l => {
       newLines.appendAll(triangle.cover(l))
     })
-    
-    newLines.toList
+    LineUtils.removeDuplicated(LineUtils.removeZeroLength(newLines.toList))
   }
 }

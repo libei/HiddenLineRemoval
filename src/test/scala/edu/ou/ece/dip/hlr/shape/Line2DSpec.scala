@@ -4,9 +4,17 @@ import edu.ou.ece.dip.hlr.SpecificationBase
 
 class Line2DSpec extends SpecificationBase {
   "A two-dimentional line" should {
+
+    "tell if two lines are equal ignoring direction" >> {
+      val A: Point2D = Point2D(0, 0)
+      val B: Point2D = Point2D(2, 2)
+
+      (A to B) equalsIgnoreDirection (B to A) mustBe true
+    }
+
     "tell its length" >> {
       "Given" >> {
-        val line: Line2D = new Line2D(new Point2D(0, 0), new Point2D(2, 2))
+        val line: Line2D = new Line2D(Point2D(0, 0), Point2D(2, 2))
         AreEqual(line.length, 2.828427)
       }
 

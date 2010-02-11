@@ -5,11 +5,12 @@ import objectmother.{ProjectedLineMother, ProjectedTriangleMother}
 import edu.ou.ece.dip.hlr.utils.{MatlabUtils, CameraUtils}
 
 class ProjectedTriangleSpec extends SpecificationBase {
-  
   "A triangle" should {
     val triangle = ProjectedTriangleMother.create(Point2D(0, 0),
       Point2D(2.5, 5),
       Point2D(5, 0))
+
+
     "tell if a line has any intersection with it" >> {
 
       "Given a line goes through the triangle in the middle, there should be two intersections" >> {
@@ -92,7 +93,7 @@ class ProjectedTriangleSpec extends SpecificationBase {
               "# one end of the line is on one corner of the triangle" +
               "# another end of the line is inside the triangle and further to the camera" +
               "Then the entire line should be invisible" >> {
-        val line = CameraUtils.project( Point3D(2.5, 5, 3) to Point3D(2.5, 2.5, 5), 0.5)
+        val line = CameraUtils.project(Point3D(2.5, 5, 3) to Point3D(2.5, 2.5, 5), 0.5)
         val linesLeft = triangle.cover(line)
         linesLeft.length must_== 0
       }

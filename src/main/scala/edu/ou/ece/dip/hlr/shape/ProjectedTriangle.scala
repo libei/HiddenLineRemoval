@@ -1,7 +1,7 @@
 package edu.ou.ece.dip.hlr.shape
 
 import collection.mutable.{ListBuffer}
-import edu.ou.ece.dip.hlr.utils.{FloatUtil, CameraUtils}
+import edu.ou.ece.dip.hlr.utils.{LineUtils, FloatUtil, CameraUtils}
 
 class ProjectedTriangle(vertexAB: ProjectedLine, vertexBC: ProjectedLine, vertexCA: ProjectedLine, val originalTriangle: Triangle3D) {
   private val _vertices = new ListBuffer[ProjectedLine]
@@ -9,7 +9,7 @@ class ProjectedTriangle(vertexAB: ProjectedLine, vertexBC: ProjectedLine, vertex
   _vertices.append(vertexBC)
   _vertices.append(vertexCA)
   val vertices = _vertices.toList
-  
+
   val A = vertexAB.A
   val B = vertexAB.B
   val C = vertexBC.B
@@ -69,17 +69,17 @@ class ProjectedTriangle(vertexAB: ProjectedLine, vertexBC: ProjectedLine, vertex
   }
 
   def cover(projectedLine: ProjectedLine): List[ProjectedLine] = {
-    for (line <- coverInternal(projectedLine) if !FloatUtil.Equals(line.length, 0)) yield line
+    LineUtils.removeDuplicated(LineUtils.removeZeroLength(_cover(projectedLine)))
   }
 
   private def oneEndIsOneThePlateAnotherIsCovered(start: Point2D, end: Point2D, startOriginal: Point3D, endOriginal: Point3D): Boolean = {
-    val isStartPointCovered = originalTriangle.isCloserThan(startOriginal) && isInside(start)
-    val isStartPointOnThePlate = originalTriangle.isEqual(startOriginal) && isInside(start)
-    val isStartPointUnCovered = originalTriangle.isBehind(startOriginal) || !isInside(start)
+    val isStartPointCovered = (originalTriangle |* startOriginal) && isInside(start)
+    val isStartPointOnThePlate = (originalTriangle |*| startOriginal) && isInside(start)
+    val isStartPointUnCovered = (originalTriangle *| startOriginal) || !isInside(start)
 
-    val isEndPointCovered = originalTriangle.isCloserThan(endOriginal) && isInside(end)
-    val isEndPointOnThePlate = originalTriangle.isEqual(endOriginal) && isInside(end)
-    val isEndPointUnCovered = originalTriangle.isBehind(endOriginal) || !isInside(end)
+    val isEndPointCovered = (originalTriangle |* endOriginal) && isInside(end)
+    val isEndPointOnThePlate = (originalTriangle |*| endOriginal) && isInside(end)
+    val isEndPointUnCovered = (originalTriangle |* endOriginal) || !isInside(end)
 
     (isStartPointCovered && isEndPointOnThePlate) || (isStartPointOnThePlate && isEndPointCovered)
   }
@@ -90,8 +90,8 @@ class ProjectedTriangle(vertexAB: ProjectedLine, vertexBC: ProjectedLine, vertex
 
     startCovered && endCovered
   }
-
-  def coverInternal(projectedLine: ProjectedLine): List[ProjectedLine] = {
+  
+  private def _cover(projectedLine: ProjectedLine): List[ProjectedLine] = {
     val original = List(projectedLine)
 
     var intersections = intersect(projectedLine)
@@ -150,12 +150,10 @@ class ProjectedTriangle(vertexAB: ProjectedLine, vertexBC: ProjectedLine, vertex
 
   def isPointVisible(projectPoint: Point2D, originalPoint: Point3D): Boolean = {
     if (!isInside(projectPoint))
-      true
-    else
-      {
-        val isTiangleBehindThePoint: Boolean = originalTriangle.isBehind(originalPoint)
-        val equal: Boolean = originalTriangle.isEqual(originalPoint)
-        isTiangleBehindThePoint || equal
-      }
+      return true
+    
+    val behind: Boolean = originalTriangle *| originalPoint
+    val equal: Boolean = originalTriangle |*| originalPoint
+    behind || equal
   }
 }
