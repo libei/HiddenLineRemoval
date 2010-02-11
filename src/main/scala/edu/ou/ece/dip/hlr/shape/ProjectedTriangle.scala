@@ -91,11 +91,6 @@ class ProjectedTriangle(vertexAB: ProjectedLine, vertexBC: ProjectedLine, vertex
 
   def coverInternal(projectedLine: ProjectedLine): List[ProjectedLine] = {
     val original = List(projectedLine)
-    //
-    //    if (isInside(projectedLine)
-    //            && originalTriangle.isCloserThan(projectedLine.originalLine.start)
-    //            && originalTriangle.isCloserThan(projectedLine.originalLine.end))
-    //      return List()
 
     var intersections = intersect(projectedLine)
 
@@ -135,13 +130,7 @@ class ProjectedTriangle(vertexAB: ProjectedLine, vertexBC: ProjectedLine, vertex
       val originalPoint2 = projectedLine.getOriginalPoint(intersectionTwo)
 
       val isStartVisible = isPointVisible(intersectionOne, originalPoint1.get)
-      //        if (!isInside(intersectionOne))
-      //          true
-      //        else
-      //          originalTriangle.isBehind(originalPoint1.get) || originalTriangle.isEqual(originalPoint1.get)
       val isEndVisible = isPointVisible(intersectionTwo, originalPoint2.get)
-      //
-      //      val isEndVisible = originalTriangle.isBehind(originalPoint2.get) || originalTriangle.isEqual(originalPoint2.get)
 
       if (isStartVisible && isEndVisible)
         return original

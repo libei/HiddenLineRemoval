@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager" verified="true">
     <list default="true" id="242eafd1-f5f8-433c-95ec-27698fb83ad7" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/scala/edu/ou/ece/dip/hlr/utils/FloatUtilSpec.scala" afterPath="$PROJECT_DIR$/src/test/scala/edu/ou/ece/dip/hlr/utils/FloatUtilSpec.scala" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/scala/edu/ou/ece/dip/hlr/utils/FloatUtil.scala" afterPath="$PROJECT_DIR$/src/main/scala/edu/ou/ece/dip/hlr/utils/FloatUtil.scala" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/scala/edu/ou/ece/dip/hlr/utils/HiddenLineRemovalUtilsSpec.scala" afterPath="$PROJECT_DIR$/src/test/scala/edu/ou/ece/dip/hlr/utils/HiddenLineRemovalUtilsSpec.scala" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/HiddenLineRemoval.iws" afterPath="$PROJECT_DIR$/HiddenLineRemoval.iws" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/scala/edu/ou/ece/dip/hlr/shape/ProjectedTriangle.scala" afterPath="$PROJECT_DIR$/src/main/scala/edu/ou/ece/dip/hlr/shape/ProjectedTriangle.scala" />
     </list>
     <ignored path=".idea/workspace.xml" />
     <ignored path="HiddenLineRemoval.iws" />
@@ -23,47 +23,6 @@
     <disable_hints />
   </component>
   <component name="DebuggerManager">
-    <line_breakpoints>
-      <breakpoint url="file://$PROJECT_DIR$/src/main/scala/edu/ou/ece/dip/hlr/shape/ProjectedTriangle.scala" line="92" class="Class at ProjectedTriangle.scala:92" package="">
-        <option name="ENABLED" value="true" />
-        <option name="LOG_ENABLED" value="false" />
-        <option name="LOG_EXPRESSION_ENABLED" value="false" />
-        <option name="SUSPEND_POLICY" value="SuspendAll" />
-        <option name="COUNT_FILTER_ENABLED" value="false" />
-        <option name="COUNT_FILTER" value="0" />
-        <option name="CONDITION_ENABLED" value="false" />
-        <option name="CLASS_FILTERS_ENABLED" value="false" />
-        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
-        <option name="CONDITION" value="" />
-        <option name="LOG_MESSAGE" value="" />
-      </breakpoint>
-      <breakpoint url="file://$PROJECT_DIR$/src/main/scala/edu/ou/ece/dip/hlr/shape/ProjectedTriangle.scala" line="133" class="Class at ProjectedTriangle.scala:133" package="">
-        <option name="ENABLED" value="true" />
-        <option name="LOG_ENABLED" value="false" />
-        <option name="LOG_EXPRESSION_ENABLED" value="false" />
-        <option name="SUSPEND_POLICY" value="SuspendAll" />
-        <option name="COUNT_FILTER_ENABLED" value="false" />
-        <option name="COUNT_FILTER" value="0" />
-        <option name="CONDITION_ENABLED" value="false" />
-        <option name="CLASS_FILTERS_ENABLED" value="false" />
-        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
-        <option name="CONDITION" value="" />
-        <option name="LOG_MESSAGE" value="" />
-      </breakpoint>
-      <breakpoint url="file://$PROJECT_DIR$/src/main/scala/edu/ou/ece/dip/hlr/shape/ProjectedTriangle.scala" line="99" class="Class at ProjectedTriangle.scala:99" package="">
-        <option name="ENABLED" value="true" />
-        <option name="LOG_ENABLED" value="false" />
-        <option name="LOG_EXPRESSION_ENABLED" value="false" />
-        <option name="SUSPEND_POLICY" value="SuspendAll" />
-        <option name="COUNT_FILTER_ENABLED" value="false" />
-        <option name="COUNT_FILTER" value="0" />
-        <option name="CONDITION_ENABLED" value="false" />
-        <option name="CLASS_FILTERS_ENABLED" value="false" />
-        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
-        <option name="CONDITION" value="" />
-        <option name="LOG_MESSAGE" value="" />
-      </breakpoint>
-    </line_breakpoints>
     <breakpoint_any>
       <breakpoint>
         <option name="NOTIFY_CAUGHT" value="true" />
@@ -140,10 +99,28 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="FloatUtilSpec.scala" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="FloatUtilSpec.scala" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/scala/edu/ou/ece/dip/hlr/utils/FloatUtilSpec.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="27" column="56" selection-start="960" selection-end="960" vertical-scroll-proportion="0.45945945">
+            <state line="27" column="29" selection-start="960" selection-end="960" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="HiddenLineRemovalUtilsSpec.scala" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/scala/edu/ou/ece/dip/hlr/utils/HiddenLineRemovalUtilsSpec.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="196" column="60" selection-start="7234" selection-end="7234" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="HiddenLineRemovalUtils.scala" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/scala/edu/ou/ece/dip/hlr/utils/HiddenLineRemovalUtils.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="26" column="34" selection-start="997" selection-end="997" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -185,10 +162,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ProjectedTriangle.scala" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="ProjectedTriangle.scala" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/scala/edu/ou/ece/dip/hlr/shape/ProjectedTriangle.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="131" column="34" selection-start="4905" selection-end="4905" vertical-scroll-proportion="0.0">
+            <state line="19" column="32" selection-start="583" selection-end="583" vertical-scroll-proportion="0.45066667">
               <folding />
             </state>
           </provider>
@@ -220,14 +197,14 @@
         <option value="$PROJECT_DIR$/src/main/scala/edu/ou/ece/dip/hlr/utils/MatlabUtils.scala" />
         <option value="$PROJECT_DIR$/src/test/scala/edu/ou/ece/dip/hlr/utils/CameraUtilsSpec.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/edu/ou/ece/dip/hlr/utils/CameraUtils.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/edu/ou/ece/dip/hlr/shape/ProjectedTriangle.scala" />
-        <option value="$PROJECT_DIR$/src/test/scala/edu/ou/ece/dip/hlr/utils/HiddenLineRemovalUtilsSpec.scala" />
         <option value="$PROJECT_DIR$/src/test/scala/edu/ou/ece/dip/hlr/shape/ProjectedLineSpec.scala" />
         <option value="$PROJECT_DIR$/src/test/scala/edu/ou/ece/dip/hlr/SpecificationBase.scala" />
         <option value="$PROJECT_DIR$/src/test/scala/edu/ou/ece/dip/hlr/shape/ProjectedTriangleSpec.scala" />
         <option value="$PROJECT_DIR$/src/test/scala/edu/ou/ece/dip/hlr/shape/Trapezoid3DSpec.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/edu/ou/ece/dip/hlr/utils/FloatUtil.scala" />
         <option value="$PROJECT_DIR$/src/test/scala/edu/ou/ece/dip/hlr/utils/FloatUtilSpec.scala" />
+        <option value="$PROJECT_DIR$/src/test/scala/edu/ou/ece/dip/hlr/utils/HiddenLineRemovalUtilsSpec.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/edu/ou/ece/dip/hlr/shape/ProjectedTriangle.scala" />
       </list>
     </option>
   </component>
@@ -477,7 +454,7 @@
       <recent name="edu.ou.ece.dip.hir.shape" />
     </key>
   </component>
-  <component name="RunManager" selected="Specs.FloatUtilSpec">
+  <component name="RunManager" selected="Specs.HiddenLineRemovalUtilsSpec">
     <configuration default="false" name="ProjectedTriangleSpec" type="SpecsRunConfiguration" factoryName="Specs" temporary="true">
       <module name="HiddenLineRemoval" />
       <setting name="path" value="edu.ou.ece.dip.hlr.shape.ProjectedTriangleSpec" />
@@ -778,12 +755,12 @@
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.43543047" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3923841" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.19856705" sideWeight="0.66225165" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19856705" sideWeight="0.7764901" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24053223" sideWeight="0.5562914" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24053223" sideWeight="0.7764901" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.4321192" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.10440123" sideWeight="0.5562914" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21192053" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.10440123" sideWeight="0.5562914" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -841,23 +818,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/scala/edu/ou/ece/dip/hlr/utils/HiddenLineRemovalUtilsSpec.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="215" column="26" selection-start="8354" selection-end="8354" vertical-scroll-proportion="0.6207865">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/scala/objectmother/Line3DMother.scala">
       <provider selected="true" editor-type-id="text-editor">
         <state line="9" column="25" selection-start="226" selection-end="226" vertical-scroll-proportion="0.3923077">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/edu/ou/ece/dip/hlr/utils/HiddenLineRemovalUtils.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="13" selection-start="503" selection-end="503" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -886,13 +849,6 @@
     <entry file="file://$PROJECT_DIR$/src/main/scala/edu/ou/ece/dip/hlr/shape/Point2D.scala">
       <provider selected="true" editor-type-id="text-editor">
         <state line="39" column="15" selection-start="1065" selection-end="1065" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/edu/ou/ece/dip/hlr/shape/ProjectedTriangle.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="131" column="34" selection-start="4905" selection-end="4905" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -941,7 +897,28 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/scala/edu/ou/ece/dip/hlr/utils/FloatUtilSpec.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="56" selection-start="960" selection-end="960" vertical-scroll-proportion="0.45945945">
+        <state line="27" column="29" selection-start="960" selection-end="960" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/scala/edu/ou/ece/dip/hlr/utils/HiddenLineRemovalUtilsSpec.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="196" column="60" selection-start="7234" selection-end="7234" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/edu/ou/ece/dip/hlr/utils/HiddenLineRemovalUtils.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="26" column="34" selection-start="997" selection-end="997" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/edu/ou/ece/dip/hlr/shape/ProjectedTriangle.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="32" selection-start="583" selection-end="583" vertical-scroll-proportion="0.45066667">
           <folding />
         </state>
       </provider>
