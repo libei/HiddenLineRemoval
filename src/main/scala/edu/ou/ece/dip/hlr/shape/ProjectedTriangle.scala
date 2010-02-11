@@ -84,9 +84,9 @@ class ProjectedTriangle(vertexAB: ProjectedLine, vertexBC: ProjectedLine, vertex
     (isStartPointCovered && isEndPointOnThePlate) || (isStartPointOnThePlate && isEndPointCovered)
   }
 
-  private def bothCovered(start: Point3D, end: Point3D): Boolean = {
-    val startCovered = originalTriangle.isCloserThan(start)
-    val endCovered = originalTriangle.isCloserThan(end)
+  private def bothCovered(start2D: Point2D, start: Point3D, end2D: Point2D, end: Point3D): Boolean = {
+    val startCovered = originalTriangle.isCloserThan(start) && isInside(start2D)
+    val endCovered = originalTriangle.isCloserThan(end) && isInside(end2D)
 
     startCovered && endCovered
   }
@@ -107,7 +107,7 @@ class ProjectedTriangle(vertexAB: ProjectedLine, vertexBC: ProjectedLine, vertex
         if (oneEndIsOneThePlateAnotherIsCovered(projectedLine.A, projectedLine.B, startOriginal, endOriginal))
           return List()
 
-        if (bothCovered(startOriginal, endOriginal))
+        if (bothCovered(projectedLine.A, startOriginal, projectedLine.B, endOriginal))
           return List()
 
         return original
