@@ -4,35 +4,37 @@ import collection.mutable.{ListBuffer}
 import edu.ou.ece.dip.hlr.utils.{FloatUtil, CameraUtils}
 
 class ProjectedTriangle(vertexAB: ProjectedLine, vertexBC: ProjectedLine, vertexCA: ProjectedLine, val originalTriangle: Triangle3D) {
-  val vertices = new ListBuffer[ProjectedLine]
-  vertices.append(vertexAB)
-  vertices.append(vertexBC)
-  vertices.append(vertexCA)
-  val cornerA = vertexAB.A
-  val cornerB = vertexAB.B
-  val cornerC = vertexBC.B
+  private val _vertices = new ListBuffer[ProjectedLine]
+  _vertices.append(vertexAB)
+  _vertices.append(vertexBC)
+  _vertices.append(vertexCA)
+  val vertices = _vertices.toList
+  
+  val A = vertexAB.A
+  val B = vertexAB.B
+  val C = vertexBC.B
 
-  def sign(x: Double): Double = {
+  private def sign(x: Double): Double = {
     if (FloatUtil.Equals(x, 0))
       return 0
     Math.signum(x)
   }
 
   def isInside(point: Point2D): Boolean = {
-    if ((point == cornerA) || (point == cornerB) || (point == cornerC))
+    if ((point == A) || (point == B) || (point == C))
       return true
 
-    val vectorAT: Vector = new Vector(new Line2D(cornerA, point))
+    val vectorAT: Vector = new Vector(new Line2D(A, point))
     val vectorAB: Vector = new Vector(vertexAB)
     val productABAT: Vector = vectorAB.crossProduct(vectorAT)
     val signABAT = sign(productABAT.zComponent) //todo this way to tell direction of a vector might be wrong
 
-    val vectorBT: Vector = new Vector(new Line2D(cornerB, point))
+    val vectorBT: Vector = new Vector(new Line2D(B, point))
     val vectorBC: Vector = new Vector(vertexBC)
     val productBCBT: Vector = vectorBC.crossProduct(vectorBT)
     val signBCBT = sign(productBCBT.zComponent)
 
-    val vectorCT: Vector = new Vector(new Line2D(cornerC, point))
+    val vectorCT: Vector = new Vector(new Line2D(C, point))
     val vectorCA: Vector = new Vector(vertexCA)
     val productCACT: Vector = vectorCA.crossProduct(vectorCT)
     val signCACT = sign(productCACT.zComponent)
