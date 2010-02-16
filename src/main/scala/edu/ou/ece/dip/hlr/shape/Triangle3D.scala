@@ -8,14 +8,17 @@ object Triangle3D {
   }
 }
 
-class Triangle3D(val cornerA: Point3D, val cornerB: Point3D, val cornerC: Point3D) {
-  val lineAB: Line3D = new Line3D(cornerA, cornerB)
-  val lineBC: Line3D = new Line3D(cornerB, cornerC)
-  val lineCA: Line3D = new Line3D(cornerC, cornerA)
+class Triangle3D(val cornerA: Point3D, val cornerB: Point3D, val cornerC: Point3D) extends Decomposable {
+  val lineAB = new Line3D(cornerA, cornerB)
+  val lineBC = new Line3D(cornerB, cornerC)
+  val lineCA = new Line3D(cornerC, cornerA)
+  
   val vertices = List(lineAB, lineBC, lineCA)
   def getVertexAB = lineAB
   def getVertexBC = lineBC
   def getVertexCA = lineCA
+
+  def triangles = List(this) 
 
   def isBehind(point: Point3D): Boolean = {
     FloatUtil.LessThan(depth(point), 0)
