@@ -5,7 +5,7 @@ import edu.ou.ece.dip.hlr.shape._
 
 class PointDto(val x: Double, val y: Double, val z: Double, val index: Int, val shapeId: Int)
 
-object MatlabUtils {
+object MatlabInterop {
   def generateMatrixForLineDisplay(lines: List[Line2D]): String = {
     val builder: StringBuilder = new StringBuilder
     if (lines.length == 0)

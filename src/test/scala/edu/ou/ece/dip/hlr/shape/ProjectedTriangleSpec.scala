@@ -2,7 +2,7 @@ package edu.ou.ece.dip.hlr.shape
 
 import edu.ou.ece.dip.hlr.SpecificationBase
 import objectmother.{ProjectedLineMother, ProjectedTriangleMother}
-import edu.ou.ece.dip.hlr.utils.{MatlabUtils, CameraUtils}
+import edu.ou.ece.dip.hlr.utils.{MatlabInterop, CameraUtils}
 
 class ProjectedTriangleSpec extends SpecificationBase {
   "A triangle" should {

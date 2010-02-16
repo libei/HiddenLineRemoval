@@ -3,7 +3,7 @@ package edu.ou.ece.dip.hlr.utils
 import edu.ou.ece.dip.hlr.SpecificationBase
 import edu.ou.ece.dip.hlr.shape.{Trapezoid3D, Point3D, Triangle3D}
 
-class MatlabUtilsSpec extends SpecificationBase {
+class MatlabInteropSpec extends SpecificationBase {
   "remove hidden line" should {
     val a_x = 0.0
     val a_y = 0.0
@@ -37,7 +37,7 @@ class MatlabUtilsSpec extends SpecificationBase {
       val y_list = Array(a_y, b_y, c_y)
       val z_list = Array(a_z, b_z, c_z)
 
-      val actual = MatlabUtils.parseShapes(x_list, y_list, z_list, index, shapeId)
+      val actual = MatlabInterop.parseShapes(x_list, y_list, z_list, index, shapeId)
 
       actual.length must_== 1
 
@@ -59,7 +59,7 @@ class MatlabUtilsSpec extends SpecificationBase {
       val y_list = Array(a_y, b_y, c_y, d_y)
       val z_list = Array(a_z, b_z, c_z, d_z)
 
-      val actual = MatlabUtils.parseShapes(x_list, y_list, z_list, index, shapeId)
+      val actual = MatlabInterop.parseShapes(x_list, y_list, z_list, index, shapeId)
 
       actual.length must_== 1
 

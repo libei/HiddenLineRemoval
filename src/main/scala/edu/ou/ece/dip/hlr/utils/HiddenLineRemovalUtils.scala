@@ -7,13 +7,13 @@ object HiddenLineRemovalUtils {
   def removeHiddenLines(triangles: List[Triangle3D], lines: List[Line3D], focalLength: Double): List[ProjectedLine] = {
 
     var currentLines = CameraUtils.projectLines(lines, focalLength)
-    Console.out.println(MatlabUtils.generateMatrixForLineDisplay(currentLines))
+    Console.out.println(MatlabInterop.generateMatrixForLineDisplay(currentLines))
 
     val projectedTriangles = CameraUtils.projectTriangles(triangles, focalLength)
     projectedTriangles.foreach(t => {
       currentLines = removeHiddenLinesForOne(t, currentLines)
       Console.out.println(t.originalTriangle.toString)
-      Console.out.println(MatlabUtils.generateMatrixForLineDisplay(currentLines))
+      Console.out.println(MatlabInterop.generateMatrixForLineDisplay(currentLines))
     })
 
     currentLines.toList
