@@ -1,9 +1,8 @@
 package edu.ou.ece.dip.hlr.shape
 
-class Line3D(val A: Point3D, val B: Point3D) {
+class Line3D(val A: Point3D, val B: Point3D, val name: String) {
 
-  //line name is the name of the starting point
-  val name = A.name 
+  def this(A: Point3D, B: Point3D) = this(A, B, "")
   
   private def tryIntersect(thisStartX: Double, thisStartY: Double, thisEndX: Double, thisEndY: Double, thatStartX: Double, thatStartY: Double, thatEndX: Double, thatEndY: Double): Option[Point3D] = {
 

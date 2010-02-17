@@ -1,7 +1,8 @@
 package edu.ou.ece.dip.hlr.utils
 
 import edu.ou.ece.dip.hlr.SpecificationBase
-import edu.ou.ece.dip.hlr.shape.{Trapezoid3D, Point3D, Triangle3D}
+import objectmother.{Line3DMother, ProjectedLineMother}
+import edu.ou.ece.dip.hlr.shape._
 
 class MatlabInteropSpec extends SpecificationBase {
   
@@ -47,11 +48,8 @@ class MatlabInteropSpec extends SpecificationBase {
         val t = actual(0).asInstanceOf[Triangle3D]
 
         t.getVertexAB must_== A.to(B)
-        t.getVertexAB.name must_== "0"
         t.getVertexBC must_== B.to(C)
-        t.getVertexBC.name must_== "1"
         t.getVertexCA must_== C.to(A)
-        t.getVertexCA.name must_== "2"
       }
 
       "extract one trapezoid from the input containing one trapezoid" >> {
@@ -91,26 +89,47 @@ class MatlabInteropSpec extends SpecificationBase {
 
       lines.length must_== 2
       
-      lines(0).s_x must_== line_start_x(0)
-      lines(0).s_y must_== line_start_y(0)
-      lines(0).s_z must_== line_start_z(0)
-      lines(0).e_x must_== line_end_x(0)
-      lines(0).e_y must_== line_end_y(0)
-      lines(0).e_z must_== line_end_z(0)
-      lines(0).index must_== index(0)
+      lines(0).A.x must_== line_start_x(0)
+      lines(0).A.y must_== line_start_y(0)
+      lines(0).A.z must_== line_start_z(0)
+      lines(0).B.x must_== line_end_x(0)
+      lines(0).B.y must_== line_end_y(0)
+      lines(0).B.z must_== line_end_z(0)
+      lines(0).name must_== index(0).toString
 
-      lines(1).s_x must_== line_start_x(1)
-      lines(1).s_y must_== line_start_y(1)
-      lines(1).s_z must_== line_start_z(1)
-      lines(1).e_x must_== line_end_x(1)
-      lines(1).e_y must_== line_end_y(1)
-      lines(1).e_z must_== line_end_z(1)
-      lines(1).index must_== index(1)      
-
-
+      lines(1).A.x must_== line_start_x(1)
+      lines(1).A.y must_== line_start_y(1)
+      lines(1).A.z must_== line_start_z(1)
+      lines(1).B.x must_== line_end_x(1)
+      lines(1).B.y must_== line_end_y(1)
+      lines(1).B.z must_== line_end_z(1)
+      lines(1).name must_== index(1).toString
 
     }
 
+    "generate result" >> {
+      val out_start_x = new Array[Double](100)
+      val out_start_y = new Array[Double](100)
+      val out_end_x = new Array[Double](100)
+      val out_end_y = new Array[Double](100)
+      val index = new Array[Int](100)
+
+      val line1 = ProjectedLineMother.create(Point2D(5.0, 5.0), Point2D(6.0, 6.0), Line3DMother.A)
+      val line2 = ProjectedLineMother.create(Point2D(7.0, 7.0), Point2D(8.0, 8.0), Line3DMother.B)
+      MatlabInterop.generateRes(List(line1, line2), out_start_x, out_start_y, out_end_x, out_end_y, index)
+
+      out_start_x(0) must_== 5.0
+      out_start_y(0) must_== 5.0
+      out_end_x(0) must_== 6.0
+      out_end_y(0) must_== 6.0
+      index(0) must_== Integer.parseInt(Line3DMother.A.name)
+      
+      out_start_x(1) must_== 7.0
+      out_start_y(1) must_== 7.0
+      out_end_x(1) must_== 8.0
+      out_end_y(1) must_== 8.0
+      index(1) must_== Integer.parseInt(Line3DMother.B.name)
+    }
 
   }
 }

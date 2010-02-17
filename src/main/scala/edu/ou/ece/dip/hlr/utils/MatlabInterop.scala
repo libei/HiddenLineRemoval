@@ -36,18 +36,36 @@ object MatlabInterop {
     shapes.toList
   }
 
-  def parseLines(line_start_x: Array[Double], line_start_y: Array[Double], line_start_z: Array[Double],
-                 line_end_x: Array[Double], line_end_y: Array[Double], line_end_z: Array[Double],
-                 line_index: Array[Int]): List[LineDto] = {
+  def parseLines(start_x: Array[Double], start_y: Array[Double], start_z: Array[Double],
+                 end_x: Array[Double], end_y: Array[Double], end_z: Array[Double],
+                 index: Array[Int]): List[Line3D] = {
 
     //can't use for...yield since a scala bug http://www.eishay.com/2009/06/unexpected-repeated-execution-in-scala.html
-    val res = new ListBuffer[LineDto]
+    val res = new ListBuffer[Line3D]
 
-    val value = for (i <- 0 until line_start_x.length) {
-      res.append(LineDto(line_start_x(i), line_start_y(i), line_start_z(i), line_end_x(i), line_end_y(i), line_end_z(i), line_index(i)))
+    val value = for (i <- 0 until start_x.length) {
+      val A = Point3D(start_x(i), start_y(i), start_z(i))
+      val B = Point3D(end_x(i), end_y(i), end_z(i))
+      val line = new Line3D(A, B, index(i).toString)
+      res.append(line)
     }
 
     res.toList
+  }
+
+  def generateRes(lines: List[ProjectedLine], out_start_x: Array[Double], out_start_y: Array[Double],
+                  out_end_x: Array[Double], out_end_y: Array[Double],
+                  original_index: Array[Int]) {
+
+    for(i <- 0 until lines.length) {
+      out_start_x(i) = lines(i).A.x
+      out_start_y(i) = lines(i).A.y
+      out_end_x(i) = lines(i).B.x
+      out_end_y(i) = lines(i).B.y
+      original_index(i) = Integer.parseInt(lines(i).name)
+
+    }
+    
   }
 
   def removeHiddenLine(shape_x: Array[Double], shape_y: Array[Double], shape_z: Array[Double],
@@ -57,11 +75,15 @@ object MatlabInterop {
                        line_index: Array[Int],
                        out_start_x: Array[Double], out_start_y: Array[Double],
                        out_end_x: Array[Double], out_end_y: Array[Double],
-                       original_index: Array[Int]) {
-    //    val decomopsables = parseShapes(shape_x, shape_y, shape_z, index, shapeId)
-    //    val triangles = for(d <- decomopsables) yield d.triangles
-    //    val lines = parseLines(shape_x, shape_y, shape_z, index, shapeId)
-    //    HiddenLineRemovalUtils.removeHiddenLines(triangles, lines, focalLength)
+                       original_index: Array[Int], focalLength: Double) {
+
+    val decomopsables = parseShapes(shape_x, shape_y, shape_z, index, shapeId)
+    val triangles = for (d <- decomopsables) yield d.triangles
+    val lines = parseLines(line_start_x, line_start_y, line_start_z, line_end_x, line_end_y, line_end_z, line_index)
+
+    val newLines = HiddenLineRemovalUtils.removeHiddenLines(triangles.flatten, lines, focalLength)
+
+    return
   }
 
   private def toPoint(p: PointDto): Point3D = {

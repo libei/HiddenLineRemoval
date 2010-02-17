@@ -2,6 +2,9 @@
 <project version="4">
   <component name="ChangeListManager" verified="true">
     <list default="true" id="242eafd1-f5f8-433c-95ec-27698fb83ad7" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/scala/objectmother/Line3DMother.scala" afterPath="$PROJECT_DIR$/src/test/scala/objectmother/Line3DMother.scala" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/scala/edu/ou/ece/dip/hlr/shape/Line3D.scala" afterPath="$PROJECT_DIR$/src/main/scala/edu/ou/ece/dip/hlr/shape/Line3D.scala" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/scala/edu/ou/ece/dip/hlr/shape/ProjectedLine.scala" afterPath="$PROJECT_DIR$/src/main/scala/edu/ou/ece/dip/hlr/shape/ProjectedLine.scala" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/HiddenLineRemoval.iws" afterPath="$PROJECT_DIR$/HiddenLineRemoval.iws" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/scala/edu/ou/ece/dip/hlr/utils/MatlabInterop.scala" afterPath="$PROJECT_DIR$/src/main/scala/edu/ou/ece/dip/hlr/utils/MatlabInterop.scala" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/scala/edu/ou/ece/dip/hlr/utils/MatlabInteropSpec.scala" afterPath="$PROJECT_DIR$/src/test/scala/edu/ou/ece/dip/hlr/utils/MatlabInteropSpec.scala" />
@@ -23,6 +26,21 @@
     <disable_hints />
   </component>
   <component name="DebuggerManager">
+    <line_breakpoints>
+      <breakpoint url="file://$PROJECT_DIR$/src/main/scala/edu/ou/ece/dip/hlr/utils/MatlabInterop.scala" line="64" class="Class at MatlabInterop.scala:64" package="">
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="false" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+    </line_breakpoints>
     <breakpoint_any>
       <breakpoint>
         <option name="NOTIFY_CAUGHT" value="true" />
@@ -90,19 +108,55 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MatlabInteropSpec.scala" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="MatlabInteropSpec.scala" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/scala/edu/ou/ece/dip/hlr/utils/MatlabInteropSpec.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="2" selection-start="200" selection-end="200" vertical-scroll-proportion="0.0">
+            <state line="114" column="68" selection-start="3128" selection-end="3128" vertical-scroll-proportion="0.6800805">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MatlabInterop.scala" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="Line3DMother.scala" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/scala/objectmother/Line3DMother.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="12" column="47" selection-start="364" selection-end="364" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ProjectedTriangleMother.scala" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/scala/objectmother/ProjectedTriangleMother.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="13" column="26" selection-start="378" selection-end="397" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MatlabInterop.scala" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/scala/edu/ou/ece/dip/hlr/utils/MatlabInterop.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="60" column="50" selection-start="2547" selection-end="2547" vertical-scroll-proportion="0.5504274">
+            <state line="64" column="0" selection-start="2276" selection-end="2276" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ProjectedLine.scala" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/scala/edu/ou/ece/dip/hlr/shape/ProjectedLine.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="13" column="30" selection-start="583" selection-end="583" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="HiddenLineRemovalUtils.scala" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/scala/edu/ou/ece/dip/hlr/utils/HiddenLineRemovalUtils.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="6" column="96" selection-start="234" selection-end="253" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -126,8 +180,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/main/scala/edu/ou/ece/dip/hlr/shape/Line2D.scala" />
-        <option value="$PROJECT_DIR$/src/test/scala/edu/ou/ece/dip/hlr/shape/Line2DSpec.scala" />
         <option value="$PROJECT_DIR$/src/test/scala/edu/ou/ece/dip/hlr/shape/ProjectedTriangleSpec.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/edu/ou/ece/dip/hlr/utils/LineUtils.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/edu/ou/ece/dip/hlr/utils/HiddenLineRemovalUtils.scala" />
@@ -137,9 +189,11 @@
         <option value="$PROJECT_DIR$/src/main/scala/edu/ou/ece/dip/hlr/shape/DecomposAble.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/edu/ou/ece/dip/hlr/shape/Trapezoid3D.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/edu/ou/ece/dip/hlr/shape/Triangle3D.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/edu/ou/ece/dip/hlr/shape/Line3D.scala" />
         <option value="$PROJECT_DIR$/src/test/scala/edu/ou/ece/dip/hlr/utils/MatlabUtilsSpec.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/edu/ou/ece/dip/hlr/utils/MatlabUtils.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/edu/ou/ece/dip/hlr/shape/Line3D.scala" />
+        <option value="$PROJECT_DIR$/src/test/scala/objectmother/Line3DMother.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/edu/ou/ece/dip/hlr/shape/ProjectedLine.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/edu/ou/ece/dip/hlr/utils/MatlabInterop.scala" />
         <option value="$PROJECT_DIR$/src/test/scala/edu/ou/ece/dip/hlr/utils/MatlabInteropSpec.scala" />
       </list>
@@ -229,6 +283,10 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="scala" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="objectmother" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -480,7 +538,13 @@
       <setting name="path" value="edu.ou.ece.dip.hlr.utils.MatlabInteropSpec" />
       <setting name="vmparams" value="" />
       <setting name="params" value="" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="4663" />
+        <option name="TRANSPORT" value="0" />
+        <option name="LOCAL" value="true" />
+      </RunnerSettings>
       <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Debug" />
       <ConfigurationWrapper RunnerId="Run" />
       <method />
     </configuration>
@@ -731,20 +795,20 @@
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.48013246" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.27403316" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24974412" sideWeight="0.8278146" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.47845304" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.36132598" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3160221" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.42209944" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3923841" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.097274184" sideWeight="0.6773481" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.097274184" sideWeight="0.601105" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23944415" sideWeight="0.6773481" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23944415" sideWeight="0.601105" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.31491712" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.39116022" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.27403316" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.10422234" sideWeight="0.5138122" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Thumbnails" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32906976" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -761,7 +825,7 @@
     <option name="PERFORM_ROLLBACK_IN_BACKGROUND" value="false" />
     <option name="CHECK_LOCALLY_CHANGED_CONFLICTS_IN_BACKGROUND" value="true" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="rename MatlabUtils class" />
+    <option name="LAST_COMMIT_MESSAGE" value="parse lines from for matlab interop" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="true" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -789,6 +853,7 @@
     <MESSAGE value="clean up code" />
     <MESSAGE value="add code to do matalb interop" />
     <MESSAGE value="rename MatlabUtils class" />
+    <MESSAGE value="parse lines from for matlab interop" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -798,49 +863,14 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/test/scala/edu/ou/ece/dip/hlr/utils/HiddenLineRemovalUtilsSpec.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="63" selection-start="573" selection-end="573" vertical-scroll-proportion="0.57522124" />
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/scala-lang/scala-library/2.7.7/scala-library-2.7.7.jar!/scala/Range.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/scala-tools/testing/specs/1.6.2/specs-1.6.2.jar!/org/specs/specification/ExampleExecution.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/scala-tools/testing/specs/1.6.2/specs-1.6.2.jar!/org/specs/specification/LifeCycle.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/edu/ou/ece/dip/hlr/shape/Trapezoid3D.scala">
       <provider selected="true" editor-type-id="text-editor">
         <state line="7" column="48" selection-start="363" selection-end="363" vertical-scroll-proportion="0.23931624" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/edu/ou/ece/dip/hlr/shape/Triangle3D.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="21" selection-start="323" selection-end="323" vertical-scroll-proportion="0.35369775" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/edu/ou/ece/dip/hlr/shape/Point3D.scala">
       <provider selected="true" editor-type-id="text-editor">
         <state line="14" column="6" selection-start="298" selection-end="298" vertical-scroll-proportion="0.33279744" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/edu/ou/ece/dip/hlr/utils/HiddenLineRemovalUtils.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="6" selection-start="144" selection-end="144" vertical-scroll-proportion="0.034188036" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/edu/ou/ece/dip/hlr/shape/Line3D.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="17" selection-start="372" selection-end="372" vertical-scroll-proportion="0.03521127" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/edu/ou/ece/dip/hlr/shape/Point2D.scala">
@@ -858,11 +888,6 @@
         <state line="29" column="6" selection-start="1763" selection-end="1763" vertical-scroll-proportion="0.034188036" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/edu/ou/ece/dip/hlr/utils/FloatUtil.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="18" selection-start="383" selection-end="383" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/scala-lang/scala-library/2.7.7/scala-library-2.7.7.jar!/scala/RandomAccessSeq.class">
       <provider selected="true" editor-type-id="text-editor">
         <state line="18" column="8" selection-start="1222" selection-end="1222" vertical-scroll-proportion="0.33333334">
@@ -870,16 +895,70 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/scala/edu/ou/ece/dip/hlr/utils/MatlabInteropSpec.scala">
+    <entry file="file://$PROJECT_DIR$/src/main/scala/edu/ou/ece/dip/hlr/shape/Line2D.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="2" selection-start="200" selection-end="200" vertical-scroll-proportion="0.0">
+        <state line="5" column="6" selection-start="101" selection-end="101" vertical-scroll-proportion="-2.5902336">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/edu/ou/ece/dip/hlr/shape/Triangle3D.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="6" selection-start="202" selection-end="202" vertical-scroll-proportion="-0.03076923">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/edu/ou/ece/dip/hlr/shape/Line3D.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="6" selection-start="106" selection-end="106" vertical-scroll-proportion="-0.28169015">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/edu/ou/ece/dip/hlr/utils/FloatUtil.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="18" selection-start="383" selection-end="383" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/edu/ou/ece/dip/hlr/utils/HiddenLineRemovalUtils.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="96" selection-start="234" selection-end="253" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/scala/objectmother/ProjectedTriangleMother.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="26" selection-start="378" selection-end="397" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/scala/objectmother/Line3DMother.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="47" selection-start="364" selection-end="364" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/edu/ou/ece/dip/hlr/shape/ProjectedLine.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="30" selection-start="583" selection-end="583" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/edu/ou/ece/dip/hlr/utils/MatlabInterop.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="60" column="50" selection-start="2547" selection-end="2547" vertical-scroll-proportion="0.5504274">
+        <state line="64" column="0" selection-start="2276" selection-end="2276" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/scala/edu/ou/ece/dip/hlr/utils/MatlabInteropSpec.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="114" column="68" selection-start="3128" selection-end="3128" vertical-scroll-proportion="0.6800805">
           <folding />
         </state>
       </provider>

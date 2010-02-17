@@ -11,5 +11,7 @@ class ProjectedLine(start: Point2D, end: Point2D, originalLine: Line3D, focalLen
     lineFromZeroToPoint1OnCamera intersectExtension originalLine
   }
 
+  def name = originalLine.name
+
   override def toString = "start: " + start.toString + " end:" + end.toString
 }
