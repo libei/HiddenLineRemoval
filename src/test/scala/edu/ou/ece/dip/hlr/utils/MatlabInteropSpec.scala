@@ -131,5 +131,9 @@ class MatlabInteropSpec extends SpecificationBase {
       index(1) must_== Integer.parseInt(Line3DMother.B.name)
     }
 
+    "remove hidden lines" >> {
+      skip("to prepare test data")
+    }
+
   }
 }

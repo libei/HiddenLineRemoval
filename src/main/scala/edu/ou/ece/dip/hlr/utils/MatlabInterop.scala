@@ -80,10 +80,9 @@ object MatlabInterop {
     val decomopsables = parseShapes(shape_x, shape_y, shape_z, index, shapeId)
     val triangles = for (d <- decomopsables) yield d.triangles
     val lines = parseLines(line_start_x, line_start_y, line_start_z, line_end_x, line_end_y, line_end_z, line_index)
-
     val newLines = HiddenLineRemovalUtils.removeHiddenLines(triangles.flatten, lines, focalLength)
 
-    return
+    generateRes(newLines, out_start_x, out_start_y, out_end_x, out_end_y, original_index)
   }
 
   private def toPoint(p: PointDto): Point3D = {
